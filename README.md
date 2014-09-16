@@ -8,8 +8,8 @@ This is the style guide for the web at nib.
 
 ## Installation
 
-1. Clone from Stash - `git clone <repo-url>
-2. Install node modules - `npm install`
+1. Clone from Stash - `git clone ssh://git@ntlvmbld01:7999/doc/nib-web-style-guide.git`
+2. Install node modules - `cd nib-web-style-guide && npm install`
 
 ## Editing
 
