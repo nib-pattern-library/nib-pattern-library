@@ -1,0 +1,45 @@
+---
+slug:       buttons
+title:      Buttons
+template:   page.hbt
+---
+
+## Primary
+
+-	Main call to action 
+-	Should be used sparingly
+    -	Can be used multiple times on a page when it performs the same action e.g. licking to quote on landing pages or selecting a product in Quote test
+        -	Homepage is a current example that breaks this rule
+-	Can be used with an icon e.g. New join indicating a step in the process
+
+## Supplementary
+
+-	Used in conjunction with primary call to action when the user has a choice between one or more options (including the primary) e.g. New Join pages
+    -	Indicates clear hierarchy of actions
+-	Not usually used with an icon
+
+## Secondary
+
+-	Still clearly a button but less prominent than primary. 
+    -	This lack of prominence should indicate a hierarchy
+    -	Can also be used as the only CTA on a page e.g. Close button on extras product pages
+-	Can be used with an icon e.g. chevron on quote test or X on Extras product pages
+
+## Tertiary
+
+-	Most common/numerous of button styles
+-	Can be used with an icon
+
+##TODO
+
+- Naming conventions
+-	Icon use
+-	States
+    -	Hover
+    -	Active
+    -	Loading
+    -	Disabled
+-	Modifiers
+    -	Flat or raised
+    -	Colours
+    -	Sizes

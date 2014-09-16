@@ -1,0 +1,9 @@
+<article>
+    <ul>
+        {{#each collections.pages}}
+        <li>
+            <a href="page/{{this.slug}}">{{this.title}}</a>
+        </li>
+        {{/each}}
+    </ul>
+</article>
