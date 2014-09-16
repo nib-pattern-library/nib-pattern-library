@@ -1,4 +1,4 @@
-# nib-style-guide
+# nib-web-style-guide
 
 This is the style guide for the web at nib.
 
