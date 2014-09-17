@@ -1,16 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>{{ title }}</title>
-</head>
-<body>
-
-    {{> page-list}}
+{{> header}}
+{{> page-list}}
 
     <div>
         {{{ contents }}}
     </div>
 
-</body>
-</html>
+{{> footer}}

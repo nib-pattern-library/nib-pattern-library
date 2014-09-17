@@ -12,6 +12,15 @@ template:   page.hbt
         -	Homepage is a current example that breaks this rule
 -	Can be used with an icon e.g. New join indicating a step in the process
 
+### Example
+
+    <button class="v2-button v2-button--primary">Click me!</button>
+    
+<section>
+    <button class="v2-button v2-button--primary">Click me!</button>
+</section>
+
+
 ## Supplementary
 
 -	Used in conjunction with primary call to action when the user has a choice between one or more options (including the primary) e.g. New Join pages

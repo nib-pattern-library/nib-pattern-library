@@ -2,7 +2,7 @@
     <ul>
         {{#each collections.pages}}
         <li>
-            <a href="page/{{this.slug}}">{{this.title}}</a>
+            <a href="{{../relativePathToRoot}}{{path}}">{{title}}</a>
         </li>
         {{/each}}
     </ul>
