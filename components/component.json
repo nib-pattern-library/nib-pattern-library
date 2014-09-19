@@ -1,5 +1,6 @@
 {
   "name": "nib-web-style-guide",
+  "styles": ["index.css"],
   "dependencies": {
     "nib-styles/v2-buttons": "~0.2.0"
   }
