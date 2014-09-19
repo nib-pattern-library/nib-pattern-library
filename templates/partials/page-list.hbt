@@ -1,4 +1,4 @@
-<article>
+<article class="navigation">
     <ul>
         {{#each collections.pages}}
         <li>

@@ -1,8 +1,27 @@
 body{
 	font-family:open sans;
 	font-size:14px;
+	padding:0;
+	margin:0;
 }
 h1, h2, h3{
 	font-family:roboto;
 	font-weight:300;
+}
+.navigation{
+	width:200px;
+	float:left;
+	
+}
+.content{
+	padding-left:200px;
+}
+.masthead{
+	width:100%;
+	background:#009623;
+	color:#fff;
+	height:40px;
+	margin:0;
+	line-height:40px;
+	padding-left:20px;
 }
