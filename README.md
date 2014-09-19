@@ -4,21 +4,24 @@ This is the style guide for the web at nib.
 
 ## Prerequisites
 
-- nodejs 
+- [git](http://git-scm.com/download/win)
+- [nodejs](http://nodejs.org/download/) 
 
 ## Installation
 
+1. Open a command prompt
 1. Clone from Stash - `git clone ssh://git@ntlvmbld01:7999/doc/nib-web-style-guide.git`
-2. Install node modules - `cd nib-web-style-guide && npm install`
-
-## Editing
-
-Edit the files in `/content`.
+1. Change the current directory - `cd nib-web-style-guide`
+1. Install node modules - `npm install`
 
 ## Building
 
-Run `npm run build` and then open `/build/index.html`.
+1. Run `npm run build` 
+1. Open `build/index.html`
 
-## TODO
+## Editing
 
-- wire up components
+1. Run `npm run watch` 
+1. Open `build/index.html`
+1. Edit content in the `content` directory, templates in the `templates` directory or styles in the `components` directory.
+1. Refresh the page

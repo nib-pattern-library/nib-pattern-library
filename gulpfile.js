@@ -21,8 +21,17 @@ gulp.task('component', function(done) {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['content/*', 'templates/*'], ['metalsmith']);
+
+  gulp.watch(
+    [
+      'content/**',
+      'templates/**'
+    ],
+    ['metalsmith']
+  );
+
   gulp.watch('components/*', ['component']);
+
 });
 
 gulp.task('default', ['clean'], function() {

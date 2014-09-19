@@ -52,7 +52,6 @@ module.exports  = function(done) {
     })
     .use(templates('handlebars'))
     .build(function(err, files) {
-      //console.log(files);
       if (err) {
         done(err);
       } else {
