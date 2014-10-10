@@ -4,8 +4,12 @@ This is the style guide for the web at nib.
 
 ## Prerequisites
 
+Required software:
+
 - [git](http://git-scm.com/download/win)
-- [nodejs](http://nodejs.org/download/) 
+- [nodejs](http://nodejs.org/download/)
+- An editor
+- A browser
 
 ## Installation
 
