@@ -30,7 +30,7 @@ gulp.task('watch', function() {
     ['metalsmith']
   );
 
-  gulp.watch('components/*', ['component']);
+  gulp.watch('components/**', ['component']);
 
 });
 

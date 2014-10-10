@@ -1,9 +1,12 @@
 {{> header}}
 {{> page-list}}
 
+    <div class="guide-content">
 
-    <div class="content">
-	<h1>{{title}}</h1>
+        <!-- within page navigation -->
+        <div class="js-in-page-nav"></div>
+
+	    <h1 class="v2-title v2-title--1">{{title}}</h1>
         {{{ contents }}}
     </div>
 

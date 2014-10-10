@@ -1,4 +1,4 @@
-<article class="navigation">
+<article class="guide-navigation guide-navigation--primary">
     <ul>
         {{#each collections.pages}}
         <li>
