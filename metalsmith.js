@@ -5,22 +5,10 @@ var collections = require('metalsmith-collections');
 
 var fs          = require('fs');
 var p           = require('path');
-var Handlebars  = require('handlebars');
+var ejs         = require('ejs');
+var extend      = require('extend');
 
 module.exports  = function(done) {
-
-  /**
-   * Registers a partial template
-   * @param   {String} name
-   */
-  function registerPartialTemplate(name) {
-    Handlebars.registerPartial(name, String(fs.readFileSync('./templates/partials/'+name+'.hbt')));
-  }
-
-  //register partial templates
-  registerPartialTemplate('header');
-  registerPartialTemplate('footer');
-  registerPartialTemplate('page-list');
 
   //build the static site
   Metalsmith(__dirname)
@@ -49,7 +37,27 @@ module.exports  = function(done) {
       }
       next();
     })
-    .use(templates('handlebars'))
+    .use(function(files, metalsmith, next) { //parse the page content and render any partials
+
+      function partial(path, data) {
+        return ejs.render(fs.readFileSync(__dirname+'/templates/partials/'+path+'.html').toString(), {locals: data}) //TODO: handle errors
+      }
+
+      for (var path in files) {
+
+        files[path].contents = ejs.render(
+          files[path].contents.toString(),
+          {
+            filename: path,
+            locals:   extend(files[path], { partial: partial })
+          }
+        );
+
+      }
+
+      next();
+    })
+    .use(templates('ejs'))
     .build(function(err, files) {
       if (err) {
         done(err);

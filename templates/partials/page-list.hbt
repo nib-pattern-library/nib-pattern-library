@@ -1,9 +1,0 @@
-<article class="guide-navigation guide-navigation--primary">
-    <ul>
-        {{#each collections.pages}}
-        <li>
-            <a href="{{../relativePathToRoot}}{{path}}">{{title}}</a>
-        </li>
-        {{/each}}
-    </ul>
-</article>

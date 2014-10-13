@@ -29,3 +29,5 @@ Required software:
 1. Open `build/index.html`
 1. Edit content in the `content` directory, templates in the `templates` directory or styles in the `components` directory.
 1. Refresh the page
+
+Template language: [JUST](https://github.com/baryshev/just)

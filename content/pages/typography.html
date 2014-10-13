@@ -1,8 +1,10 @@
 ---
 slug:       Typography
 title:      Typography
-template:   page.hbt
+template:   page.html
 ---
+
+<%= title %>
 
 <p>Typography helps create the structure and hierarchy of a page. This helps users read, absorb and comprehend the content. We use Roboto for headings and Open Sans for body and UI elements.</p>
 
@@ -17,38 +19,26 @@ template:   page.hbt
     
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
-            
-            <script type="application/json" data-template="do-list">
-                {
-                    "items": [
-                        "Top of the the page only",
-                        "Commonly used on landing pages e.g. <a href=\"http://www.nib.com.au/\">home page</a>",
-                        "Sentence case only"
-                    ]
-                }
-            </script>
-    
+
+            <%- partial('do-list', {items: [
+                'Top of the the page only',
+                'Commonly used on landing pages e.g. <a href=\"http://www.nib.com.au/\">home page</a>',
+                'Sentence case only'
+            ]}) %>
+
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
-    
-            <script type="application/json" data-template="don't-list">
-                {
-                    "items": [
-                        "Use more than once on the page",
-                        "Exceed 140 characters",
-                        "Add hyphens to line wrap text"
-                    ]
-                }
-            </script>
-            
+
+            <%- partial('dont-list', {items: [
+                'Use more than once on the page',
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
+
         </div>
     </div>
-    
-    <script type="application/json" data-template="example">
-        {
-            "source": "<h1 class=\"v2-title v2-title--1\">Great value health insurance</h1>"
-        }
-    </script>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--1">Great value health insurance</h1>'}) %>
     
 </section>
         
@@ -63,38 +53,26 @@ template:   page.hbt
     
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
-    
-            <script type="application/json" data-template="do-list">
-                {
-                    "items": [
-                        "Can be used multiple times",
-                        "Used to label sections",
-                        "Sentance case only"
-                    ]
-                }
-            </script>
+
+            <%- partial('do-list', {items: [
+                'Can be used multiple times',
+                'Used to label sections',
+                'Sentence case only'
+            ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
-    
-            <script type="application/json" data-template="don't-list">
-                {
-                    "items": [
-                        "Use as first title on the page",
-                        "Exceed 140 characters",
-                        "Add hyphens to line wrap text"
-                    ]
-                }
-            </script>
+
+            <%- partial('dont-list', {items: [
+                'Use as first title on the page',
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
     
         </div>
     </div>
-    
-    <script type="application/json" data-template="example">
-        {
-            "source": "<h1 class=\"v2-title v2-title--2\">Great value health insurance</h1>"
-        }
-    </script>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--2">Great value health insurance</h1>'}) %>
     
 </section>
         
@@ -109,37 +87,26 @@ template:   page.hbt
     
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
-    
-            <script type="application/json" data-template="do-list">
-                {
-                    "items": [
-                        "Only to be used after a title 2",
-                        "Can be used multiple times",
-                        "Used as a sub-label"
-                    ]
-                }
-            </script>
+
+            <%- partial('do-list', {items: [
+                'Only to be used after a title 2',
+                'Can be used multiple times',
+                'Used as a sub-label'
+            ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
-    
-            <script type="application/json" data-template="don't-list">
-                {
-                    "items": [
-                        "Exceed 140 characters",
-                        "Add hyphens to line wrap text"
-                    ]
-                }
-            </script>
+
+            <%- partial('dont-list', {items: [
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
     
         </div>
     </div>
-    
-    <script type="application/json" data-template="example">
-        {
-            "source": "<h1 class=\"v2-title v2-title--3\">Great value health insurance</h1>"
-        }
-    </script>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--3">Great value health insurance</h1>'}) %>
+
 </section>
 
 <hr class="guide-separator"/>
@@ -153,37 +120,26 @@ template:   page.hbt
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
-    
-            <script type="application/json" data-template="do-list">
-                {
-                    "items": [
-                        "Only to be used after a title 3",
-                        "Can be used multiple times",
-                        "Used as a sub-label"
-                    ]
-                }
-            </script>
+
+            <%- partial('do-list', {items: [
+                'Only to be used after a title 3',
+                'Can be used multiple times',
+                'Used as a sub-label'
+            ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
-    
-            <script type="application/json" data-template="don't-list">
-                {
-                    "items": [
-                        "Exceed 140 characters",
-                        "Add hyphens to line wrap text"
-                    ]
-                }
-            </script>
+
+            <%- partial('dont-list', {items: [
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
     
         </div>
     </div>
-    
-    <script type="application/json" data-template="example">
-        {
-            "source": "<h1 class=\"v2-title v2-title--4\">Great value health insurance</h1>"
-        }
-    </script>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--4">Great value health insurance</h1>'}) %>
+
 </section>
         
 <hr class="guide-separator"/>
@@ -197,40 +153,29 @@ template:   page.hbt
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
-    
-            <script type="application/json" data-template="do-list">
-                {
-                    "items": [
-                        "For paragraphs and general elements",
-                        "Use minimum of 20px margin bottom between paragraphs",
-                        "Prefer left aligned"
-                    ]
-                }
-            </script>
+
+            <%- partial('do-list', {items: [
+                'For paragraphs and general elements',
+                'Use minimum of 20px margin bottom between paragraphs',
+                'Prefer left aligned'
+            ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
-    
-            <script type="application/json" data-template="don't-list">
-                {
-                    "items": [
-                        "use a font size less than 14px",
-                        "add hyphens to line wrap text",
-                        "exceed six columns on a desktop",
-                        "center large blocks of text",
-                        "justify text"
-                    ]
-                }
-            </script>
+
+            <%- partial('dont-list', {items: [
+                'use a font size less than 14px',
+                'add hyphens to line wrap text',
+                'exceed six columns on a desktop',
+                'center large blocks of text',
+                'justify text'
+            ]}) %>
     
         </div>
     </div>
-    
-    <script type="application/json" data-template="example">
-        {
-            "source": "<p class=\"v2-text--copy\">We'll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p>"
-        }
-    </script>
+
+    <%- partial('example', {source: '<p class="v2-text--copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+
 </section>
 
 <hr class="guide-separator"/>

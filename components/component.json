@@ -3,9 +3,6 @@
   "scripts": ["index.js"],
   "styles": ["index.css"],
   "templates": [
-    "templates/do-list.html",
-    "templates/dont-list.html",
-    "templates/example.html",
     "templates/in-page-navigation.html"
   ],
   "dependencies": {
