@@ -11,8 +11,6 @@ for (var i=0; i<sections.length; ++i) {
   });
 }
 
-
-
 //render the template data
 var rendered = Mustache.render(require('./templates/in-page-navigation.html'), {components: anchors});
 console.log(rendered);
