@@ -1,6 +1,8 @@
-var gulp = require('gulp');
-var rimraf = require('rimraf');
-var builder = require('nib-component-builder');
+var gulp      = require('gulp');
+var sequence  = require('run-sequence');
+var rimraf    = require('rimraf');
+var builder   = require('nib-component-builder');
+var open      = require('open');
 
 gulp.task('clean', function(done) {
   rimraf('build/', done)
@@ -20,6 +22,10 @@ gulp.task('component', function(done) {
   });
 });
 
+gulp.task('open', function() {
+  open('./build/index.html')
+});
+
 gulp.task('watch', function() {
 
   gulp.watch(
@@ -35,5 +41,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['clean'], function() {
-  gulp.start('metalsmith', 'component');
+  sequence(
+    ['metalsmith', 'component'],
+    ['open']
+  );
 });
