@@ -69,3 +69,17 @@ body {
 }
 
 /* ====== END: Guide specific styles ====== */
+
+/* ====== used on the typography page ====== */
+
+a{
+  color:#009623;
+}
+
+a:hover{
+  color:#26b11b;
+}
+
+.text-small{
+  font-size: 80%;
+}

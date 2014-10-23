@@ -10,7 +10,9 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-templates": "^0.5.2",
     "nib-component-builder": "git+https://github.com/jameslnewell/nib-component-builder.git",
-    "rimraf": "^2.2.8"
+    "open": "0.0.5",
+    "rimraf": "^2.2.8",
+    "run-sequence": "^1.0.1"
   },
   "scripts": {
     "build": "./node_modules/.bin/gulp",

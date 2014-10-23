@@ -176,3 +176,63 @@ template:   page.html
 </section>
 
 <hr class="guide-separator"/>
+
+<!-- ====== Link ====== !-->
+
+<section class="guide-component" id="link">
+    <h2 class="guide-component__title v2-title v2-title--2">Link</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Use in paragraphs',
+                'USe meaningful labelling of links e.g. Hospital cover'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'As with button labelling, avoiding using ambiguous labels such as "click here"'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<p class="v2-copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our <a href="#">change your health insurance page</a>. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+
+<!-- ====== Disclaimers ====== !-->
+
+<section class="guide-component" id="Disclaimers">
+    <h2 class="guide-component__title v2-title v2-title--2">Disclaimers</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Align at designer\'s discretion'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'As with button labelling, avoiding using ambiguous labels such as "click here"'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<p class="text-small">*For singles with a taxable income of $90,000 or less, NSW/ACT. Check the price applicable to you. Conditions apply.</p>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+
