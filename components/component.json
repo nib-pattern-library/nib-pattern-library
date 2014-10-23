@@ -1,5 +1,5 @@
 {
-  "name": "nib-web-style-guide",
+  "name": "nib-pattern-library",
   "scripts": ["index.js"],
   "styles": ["index.css"],
   "templates": [

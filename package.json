@@ -1,5 +1,5 @@
 {
-  "name": "nib-style-guide",
+  "name": "nib-pattern-library",
   "private": true,
   "dependencies": {
     "ejs": "^1.0.0",
