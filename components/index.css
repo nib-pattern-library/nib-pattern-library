@@ -6,6 +6,7 @@ body {
   padding: 0;
 	font-family: open sans;
 	font-size: 14px;
+  color:#444;
 }
 
 .guide-header {
@@ -32,15 +33,13 @@ body {
   padding: 5px 20px;
 }
 
-.guide-list--do {
+.guide-list--do .guide-list__title {
   color: #3c763d;
-  border: 1px solid #d6e9c6;
   background-color: #dff0d8;
 }
 
-.guide-list--dont {
+.guide-list--dont .guide-list__title {
   color: #a94442;
-  border: 1px solid #ebccd1;
   background-color: #f2dede;
 }
 
@@ -49,6 +48,14 @@ body {
   padding: 20px;
   background: #eee;
 }
+
+.guide-example__preview {
+  margin: 0 0 10px;
+  padding: 10px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;}
 
 .guide-example__source {
   margin: 0 0 10px;
