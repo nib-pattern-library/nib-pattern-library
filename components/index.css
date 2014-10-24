@@ -30,8 +30,23 @@ body {
 .guide-list {
   margin-top: 40px;
   margin-bottom: 10px;
-  padding: 5px 20px;
+  border-width:1px;
+  border-style: solid; 
 }
+
+.guide-list__title {
+  margin-top:0;
+  padding:10px;
+}
+
+.guide-list--do  {
+  border-color: #dff0d8;
+}
+
+.guide-list--dont  {
+  border-color: #f2dede;
+}
+
 
 .guide-list--do .guide-list__title {
   color: #3c763d;
