@@ -41,4 +41,3 @@ Required software:
 
 The templating language used is [EJS](https://github.com/tj/ejs).
 
-## Test
