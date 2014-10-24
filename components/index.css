@@ -9,6 +9,11 @@ body {
   color:#444;
 }
 
+.guide-component {
+  margin-top:60px;
+  padding-bottom:60px;
+}
+
 .guide-header {
   height: 40px;
   margin: 0;
