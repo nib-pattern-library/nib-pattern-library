@@ -96,6 +96,22 @@ body {
   border: 1px solid #009623;
 }
 
+/* === Guide Icon === */
+
+.guide-icon {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+.guide-icon__icon {
+}
+
+.guide-icon__name {
+  display: block;
+  font-weight: bold;
+}
+
 /* ====== END: Guide specific styles ====== */
 
 /* ====== used on the typography page ====== */
