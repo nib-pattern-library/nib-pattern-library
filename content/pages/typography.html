@@ -17,18 +17,18 @@ template:   page.html
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Top of the the page only',
+                'Use at top of the the page only',
                 'Commonly used on landing pages e.g. <a href=\"http://www.nib.com.au/\">home page</a>',
-                'Sentence case only'
+                'Use sentence case only'
             ]}) %>
 
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Use more than once on the page',
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'Don\'t use more than once on the page',
+                'Don\'t exceed 140 characters',
+                'Avoid hyphens to line wrap text'
             ]}) %>
 
         </div>
@@ -59,9 +59,9 @@ template:   page.html
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Use as first title on the page',
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'Don\'t use as first title on the page',
+                'Don\'t Exceed 140 characters',
+                'Avoid using hyphens to line wrap text'
             ]}) %>
     
         </div>
@@ -92,8 +92,8 @@ template:   page.html
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'Don\'t Exceed 140 characters',
+                'Don\'t use hyphens to line wrap text'
             ]}) %>
     
         </div>
@@ -124,8 +124,8 @@ template:   page.html
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'Don\'t exceed 140 characters',
+                'Avoid using hyphens to line wrap text'
             ]}) %>
     
         </div>
@@ -150,18 +150,18 @@ template:   page.html
                 'For paragraphs and general elements',
                 'Use minimum of 20px margin bottom between paragraphs',
                 'Prefer left aligned',
-                'where possible, aim for a line length of 50 - 60 characters'
+                'Where possible, aim for a line length of 50 - 60 characters'
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'use a font size less than 14px',
-                'add hyphens to line wrap text',
-                'exceed six columns on a desktop',
-                'center large blocks of text',
-                'justify text'
+                'Don\'t use a font size less than 14px',
+                'Avoid hyphenation to line wrap text',
+                'Don\'t exceed six columns line length on a desktop',
+                'Avoid centering large blocks of text - This impedes readability',
+                'Don\'t justify text'
             ]}) %>
     
         </div>
@@ -183,7 +183,7 @@ template:   page.html
 
             <%- partial('do-list', {items: [
                 'Use in paragraphs',
-                'USe meaningful labelling of links e.g. Hospital cover'
+                'Use meaningful labelling of links e.g. Hospital cover'
             ]}) %>
     
         </div>
@@ -208,6 +208,7 @@ template:   page.html
     <h2 class="guide-component__title v2-title v2-title--2">Disclaimers</h2>
         
     <div class="rg-Grid">
+        <!--
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
@@ -222,6 +223,7 @@ template:   page.html
             ]}) %>
     
         </div>
+    -->
     </div>
 
     <%- partial('example', {source: '<p class="text-small">*For singles with a taxable income of $90,000 or less, NSW/ACT. Check the price applicable to you. Conditions apply.</p>'}) %>
