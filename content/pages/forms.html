@@ -1,0 +1,236 @@
+---
+slug:       forms
+title:      Forms
+template:   page.html
+---
+
+<p>Colours are neat</p>
+
+<!-- ====== TITLE #1 ====== !-->
+        
+<section class="guide-component" id="title-1">
+    <h2 class="guide-component__title v2-title v2-title--2">Title 1</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Top of the the page only',
+                'Commonly used on landing pages e.g. <a href=\"http://www.nib.com.au/\">home page</a>',
+                'Sentence case only'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Use more than once on the page',
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
+
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--1">Great value health insurance</h1>'}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
+
+
+<!-- ====== TITLE #2 ====== !-->
+
+<section class="guide-component" id="title-2">
+    <h2 class="guide-component__title v2-title v2-title--2">Title 2</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Can be used multiple times',
+                'Used to label sections',
+                'Sentence case only'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Use as first title on the page',
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--2">Great value health insurance</h1>'}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
+
+
+<!-- ====== TITLE #3 ====== !-->
+
+<section class="guide-component" id="title-3">
+    <h2 class="guide-component__title v2-title v2-title--2">Title 3</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Only to be used after a title 2',
+                'Can be used multiple times',
+                'Used as a sub-label'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--3">Great value health insurance</h1>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+
+
+<!-- ====== TITLE #4 ====== !-->
+
+<section class="guide-component" id="title-4">
+    <h2 class="guide-component__title v2-title v2-title--2">Title 4</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Only to be used after a title 3',
+                'Can be used multiple times',
+                'Used as a sub-label'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Exceed 140 characters',
+                'Add hyphens to line wrap text'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<h1 class="v2-title v2-title--4">Great value health insurance</h1>'}) %>
+
+</section>
+        
+<hr class="guide-separator"/>
+
+
+<!-- ====== Body Copy ====== !-->
+
+<section class="guide-component" id="body-copy">
+    <h2 class="guide-component__title v2-title v2-title--2">Copy</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'For paragraphs and general elements',
+                'Use minimum of 20px margin bottom between paragraphs',
+                'Prefer left aligned'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'use a font size less than 14px',
+                'add hyphens to line wrap text',
+                'exceed six columns on a desktop',
+                'center large blocks of text',
+                'justify text'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<p class="v2-copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+
+<!-- ====== Link ====== !-->
+
+<section class="guide-component" id="link">
+    <h2 class="guide-component__title v2-title v2-title--2">Link</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Use in paragraphs',
+                'USe meaningful labelling of links e.g. Hospital cover'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'As with button labelling, avoiding using ambiguous labels such as "click here"'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<p class="v2-copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our <a href="#">change your health insurance page</a>. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+
+<!-- ====== Disclaimers ====== !-->
+
+<section class="guide-component" id="Disclaimers">
+    <h2 class="guide-component__title v2-title v2-title--2">Disclaimers</h2>
+    <h3 class="v2-title v2-title--3">Usage</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Align at designer\'s discretion'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'As with button labelling, avoiding using ambiguous labels such as "click here"'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<p class="text-small">*For singles with a taxable income of $90,000 or less, NSW/ACT. Check the price applicable to you. Conditions apply.</p>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+
