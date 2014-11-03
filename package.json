@@ -15,8 +15,8 @@
     "run-sequence": "^1.0.1"
   },
   "scripts": {
-    "build": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp build",
     "watch": "./node_modules/.bin/gulp watch",
-    "postinstall": "./node_modules/.bin/gulp"
+    "postinstall": "./node_modules/.bin/gulp build"
   }
 }

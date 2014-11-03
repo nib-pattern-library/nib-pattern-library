@@ -40,6 +40,12 @@ gulp.task('watch', function() {
 
 });
 
+gulp.task('build', ['clean'], function() {
+  sequence(
+    ['metalsmith', 'component']
+  );
+});
+
 gulp.task('default', ['clean'], function() {
   sequence(
     ['metalsmith', 'component'],
