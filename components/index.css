@@ -106,19 +106,17 @@ body {
 .guide-icon {
   display: inline-block;
   text-align: center;
-  margin-right:60px;  
-  margin-bottom: 60px;
+  margin-right:40px;  
+  margin-bottom: 40px;
   width:120px;
   height: 120px;
   vertical-align: top;
 }
 
-.guide-icon__icon {
-}
-
 .guide-icon__name {
   display: block;
 }
+
 
 /* ====== END: Guide specific styles ====== */
 
