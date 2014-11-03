@@ -1,6 +1,6 @@
 # nib-pattern-library
 
-This is the pattern library for the web at nib.[View Online](http://nib-pattern-library.azurewebsites.net).
+This is the pattern library for the web at nib. [View online](http://nib-pattern-library.azurewebsites.net).
 
 ## Prerequisites
 
