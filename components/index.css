@@ -25,7 +25,7 @@ font-family: roboto;
   line-height: 80px;
   font-weight: 100;
   border-bottom: 8px #EA3656 solid;
-  font-size: 3em;
+  font-size: 2em;
 
 }
 
@@ -171,11 +171,19 @@ a:hover{
 	text-decoration: none;
 	padding: 10px 15px;
 	display: inline-block;
-	color: #61D2D6;
+	color: #583965;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 .guide-navigation ul li a:hover {
 	background: #61D2D6;
 	color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
