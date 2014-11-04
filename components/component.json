@@ -6,6 +6,8 @@
     "templates/in-page-navigation.html"
   ],
   "dependencies": {
+    "nib-health-funds/back-to-top": "~0.1.6",
+
     "nib-styles/responsive-grid": "~0.4.2",
     "nib-styles/v2-typography": "~0.2.0",
     "nib-styles/v2-buttons": "~1.0.0",

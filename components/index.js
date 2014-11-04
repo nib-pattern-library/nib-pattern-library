@@ -13,10 +13,16 @@ for (var i=0; i<sections.length; ++i) {
 
 //render the template data
 var rendered = Mustache.render(require('./templates/in-page-navigation.html'), {components: anchors});
-console.log(rendered);
+
 //replace the template in the document
 var nav = document.querySelector('.js-in-page-nav');
 nav.innerHTML = rendered;
 
+// === back-to-top navigation ===
 
-
+var backToTop = require('back-to-top');
+backToTop({
+  element:        document.querySelector('.js-back-to-top'),
+  hideClass:      'u-hidden',
+  hideDistance:   0.25
+});

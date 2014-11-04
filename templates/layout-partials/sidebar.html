@@ -1,0 +1,21 @@
+<article class="guide-navigation guide-navigation--primary">
+
+    <ul>
+        <% collections.pages.forEach(function(page) { %>
+        <li>
+
+            <!-- {{../relativePathToRoot}} -->
+            <a href="<%= relativePathToRoot %><%= page.path %>" class="<%- currentPageSlug === page.slug ? 'is-current' : '' %>"><%= page.title %></a>
+
+            <% if (currentPageSlug === page.slug) { %>
+            <!-- within page navigation -->
+            <div class="js-in-page-nav"></div>
+            <% } %>
+
+        </li>
+        <% }) %>
+    </ul>
+
+
+
+</article>
