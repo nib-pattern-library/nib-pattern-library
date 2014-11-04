@@ -101,6 +101,20 @@ body {
   border: 1px solid #fff;
 }
 
+.guide-component__elizabeth {
+  padding: 20px;
+  background-color: #009623;
+  color: #fff;
+}
+
+.guide-component__charles {
+  padding: 20px;
+  background-color: #0a6d12;
+  color: #fff;
+}
+
+
+
 /* === Guide Icon === */
 
 .guide-icon {
