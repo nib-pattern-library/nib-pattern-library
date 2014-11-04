@@ -20,21 +20,22 @@ a {
 }
 
 .guide-header {
-font-family: roboto;
+  font-family: roboto;
   height: 80px;
   margin: 0;
   padding-left: 40px;
-  color: #D6FAFC;
-  background: #61D2D6;
+  color: #fff;
+  background: #EA3656;
   line-height: 80px;
   font-weight: 100;
-  border-bottom: 8px #EA3656 solid;
+  border-bottom: 8px #61D2D6 solid;
   font-size: 2em;
 }
 
 .guide-header strong {
 	text-transform: uppercase;
-	font-weight: 100;	
+	font-weight: 100;
+	opacity: .7;	
 }
 
 .guide-navigation--primary {
