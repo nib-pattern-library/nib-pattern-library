@@ -120,6 +120,7 @@ a {
 .guide-component__colours {
   padding:20px 20px 20px 40px;
   border-left:5px solid rgba(0,0,0,.2);
+  margin:0 0 5px 0;
 }
 
 .guide-component__elizabeth {
