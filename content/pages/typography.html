@@ -196,7 +196,14 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<p class="v2-copy">See our <a href="#">change your health insurance page</a> for more information. </p>'}) %>
+    <h3 class="v2-title v2-title--3">Modifiers</h3>
+    <ul>
+        <li><code>v2-link--green</code></li>
+        <li><code>v2-link--grey</code></li>
+        <li><code>v2-link--white</code></li>
+    </ul>
+
+    <%- partial('example', {source: '<p class="v2-copy">See our <a class="v2-link v2-link--green">change your health insurance page</a> for more information. </p>'}) %>
 
 </section>
 
