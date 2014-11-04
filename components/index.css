@@ -10,6 +10,10 @@ body {
   color:#444;
 }
 
+a {
+	color: #009623;
+}
+
 .guide-component {
   margin-top:60px;
   padding-bottom:60px;
@@ -26,7 +30,6 @@ font-family: roboto;
   font-weight: 100;
   border-bottom: 8px #EA3656 solid;
   font-size: 2em;
-
 }
 
 .guide-header strong {
@@ -35,8 +38,9 @@ font-family: roboto;
 }
 
 .guide-navigation--primary {
-	width: 200px;
+	min-width: 200px;
 	float: left;
+	position: fixed;
 }
 
 .guide-content {
@@ -166,6 +170,11 @@ font-family: roboto;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.guide-navigation--secondary ul {
+	padding-left: 20px;
+	font-size: .8em;
 }
 
 /* === Guide back-to-top === */
