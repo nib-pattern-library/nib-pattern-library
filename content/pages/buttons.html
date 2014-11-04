@@ -23,51 +23,154 @@ template:   page.html
     <button class="v2-button v2-button--supplementary">Supplementary</button>
 </section>
 
-## Primary
-
--	Main call to action 
--	Should be used sparingly
-    -	Can be used multiple times on a page when it performs the same action e.g. licking to quote on landing pages or selecting a product in Quote test
-        -	Homepage is a current example that breaks this rule
--	Can be used with an icon e.g. New join indicating a step in the process
-
-### Example
-
-    <button class="v2-button v2-button--primary">Click me!</button>
+<!-- ====== PRIMARY ====== !-->
+        
+<section class="guide-component" id="Primary">
+    <h2 class="guide-component__title v2-title v2-title--2">Primary</h2>
     
-<section>
-    <button class="v2-button v2-button--primary">Click me!</button>
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Use as main call to action',
+                'Use sparingly',
+                'Can be used with an icon e.g. New join indicating a step in the process',
+                'Can be used multiple times on a page when it performs the same action e.g. linking to quote on landing pages or selecting a product in <a href="https://www.nib.com.au/health-insurance/choose-cover/hospital">Quote test</a>'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Don\'t use on the same page for different purposes e.g. <a href="http://nib.com.au">nib Home page</a>'
+            ]}) %>
+
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<button class="v2-button v2-button--primary">Perform primary action</button>'}) %>
+    
 </section>
+        
+<hr class="guide-separator"/>
 
+<!-- ====== SECONDARY ====== !-->
+        
+<section class="guide-component" id="Secondary">
+    <h2 class="guide-component__title v2-title v2-title--2">Secondary</h2>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
 
-## Supplementary
+            <%- partial('do-list', {items: [
+                'Use sparingly',
+                'Can be used with an icon e.g. No hospital button on <a href="https://www.nib.com.au/health-insurance/choose-cover/hospital">Quote test</a>',
+            ]}) %>
 
--	Used in conjunction with primary call to action when the user has a choice between one or more options (including the primary) e.g. New Join pages
-    -	Indicates clear hierarchy of actions
--	Not usually used with an icon
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
 
-## Secondary
+            <%- partial('dont-list', {items: [
+                'Don\'t use orange',
+                'Don\'t use more than 4 times on a single screen (to designer\'s discretion). If button is being used too frequently, consider using tertiary.'
+            ]}) %>
 
--	Still clearly a button but less prominent than primary. 
-    -	This lack of prominence should indicate a hierarchy
-    -	Can also be used as the only CTA on a page e.g. Close button on extras product pages
--	Can be used with an icon e.g. chevron on quote test or X on Extras product pages
+        </div>
+    </div>
 
-## Tertiary
+    <%- partial('example', {source: '<button class="v2-button v2-button--secondary">Perform secondary action</button>'}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
 
--	Most common/numerous of button styles
--	Can be used with an icon
+<!-- ====== TERTIARY ====== !-->
+        
+<section class="guide-component" id="Tertiary">
+    <h2 class="guide-component__title v2-title v2-title--2">Tertiary</h2>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
 
-##TODO
+            <%- partial('do-list', {items: [
+                'Use when actions or links are numerous on a screen',
+                'Can be used with an icon',
+                'Ensure it is obviously clickable. e.g. colour change, underline or icon'
+            ]}) %>
 
-- Naming conventions
--	Icon use
--	States
-    -	Hover
-    -	Active
-    -	Loading
-    -	Disabled
--	Modifiers
-    -	Flat or raised
-    -	Colours
-    -	Sizes
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Don\'t use as a primary',
+                'Don\'t use a background'
+            ]}) %>
+
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<button class="v2-button v2-button--tertiary">Perform tertiary action</button>'}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
+
+<!-- ====== SUPPLEMENTARY ====== !-->
+        
+<section class="guide-component" id="Supplementary">
+    <h2 class="guide-component__title v2-title v2-title--2">Supplementary</h2>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Use for an action that is an option but not preferred',
+                'Use in conjunction with higher buttons',
+                'Can be used with an icon e.g. New join indicating a step in the process',
+                'Can be used multiple times on a page when it performs the same action e.g. linking to quote on landing pages or selecting a product in <a href="nib.com.au/health-insurance/choose-cover/hospital">Quote test</a>'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Don\'t use in conjunction with tertiary buttons'
+            ]}) %>
+
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<button class="v2-button v2-button--supplementary">Perform Supplementary action</button>'}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
+
+<!-- ====== ICONOGRAPHY ====== !-->
+        
+<section class="guide-component" id="Iconography">
+    <h2 class="guide-component__title v2-title v2-title--2">Iconography</h2>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Use to indicate an action such as a drop down or fucntion of a button e.g. <a href="nib.com.au/oshc">OSHC Page</a>',
+                'The icon color should match the color of the text on button'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                ''
+            ]}) %>
+
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<button class="v2-button v2-button--primary">Someone fix me</button>'}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
