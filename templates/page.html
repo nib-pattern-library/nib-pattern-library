@@ -1,10 +1,9 @@
 <% include layout-partials/header.html %>
-<% include layout-partials/page-list.html %>
+
+<% var currentPageSlug = slug %>
+<% include layout-partials/sidebar.html %>
 
     <div class="guide-content rg-Page">
-
-        <!-- within page navigation -->
-        <div class="js-in-page-nav"></div>
 
 	    <h1 class="v2-title v2-title--1"><%= title %></h1>
         <%- contents %>

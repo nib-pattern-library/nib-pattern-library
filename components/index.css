@@ -44,7 +44,7 @@ font-family: roboto;
 	padding-right:40px;
 }
 
-.guide-list .list{
+.guide-list .list {
   border-left-width: 2px;
   border-left-style: solid;
   list-style-type: none;
@@ -53,10 +53,9 @@ font-family: roboto;
   min-height:32px;
 }
 
-.guide-list li.list__item{
+.guide-list .list__item {
   margin-bottom:10px;
   line-height:22px;
-  text-transform: 
 }
 
 .guide-list i.v2-icon{
@@ -67,17 +66,19 @@ font-family: roboto;
   border-color: #5ce582;
 }
 
-.guide-list--dont .list{
+.guide-list--dont .list {
   border-color: #e66565;
 }
 
-.guide-list--do .v2-icon--tick{
+.guide-list--do .v2-icon--tick {
   color:#5ce582;
 }
 
-.guide-list--dont .v2-icon--close{
+.guide-list--dont .v2-icon--close {
   color:#e66565;
 }
+
+/* === Guide Example === */
 
 .guide-example {
   margin-top: 20px;
@@ -123,8 +124,6 @@ font-family: roboto;
   color: #fff;
 }
 
-
-
 /* === Guide Icon === */
 
 .guide-icon {
@@ -140,43 +139,60 @@ font-family: roboto;
 .guide-icon__name {
   display: block;
 }
+/* === Navigation == */
 
+.guide-navigation ul li {
+  list-style-image: none;
+  list-style-type: none;
+  text-transform: uppercase;
+
+}
+
+.guide-navigation ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #583965;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.guide-navigation ul li a:hover {
+  background: #61D2D6;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* === Guide back-to-top === */
+
+.guide-back-to-top {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius-topleft: 3px;
+  border-radius-topright: 3px;
+  border: 1px solid #ccc;
+  background-color: #efefef;
+}
 
 /* ====== END: Guide specific styles ====== */
 
 /* ====== used on the typography page ====== */
 
-a{
-  color:#009623;
-}
-
-a:hover{
-  color:#26b11b;
-}
-
 .text-small{
   font-size: 80%;
 }
 
-/* === Navigation == */
-
-.guide-navigation ul li {
-	list-style-image: none;
-	list-style-type: none;
-	text-transform: uppercase;
-
-}
-
-.guide-navigation ul li a {
-	text-decoration: none;
-	padding: 10px 15px;
-	display: inline-block;
-	color: #583965;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
+/* ====== utils ====== */
 
 .guide-navigation ul li a:hover {
 	background: #ECCF46;
@@ -185,5 +201,9 @@ a:hover{
 	-moz-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
+}
+	
+.u-hidden {
+  display: none;
 }
 
