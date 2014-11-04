@@ -194,6 +194,15 @@ font-family: roboto;
 
 /* ====== utils ====== */
 
+.guide-navigation ul li a:hover {
+	background: #ECCF46;
+	color: #EA3656;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+	
 .u-hidden {
   display: none;
 }
