@@ -11,6 +11,6 @@
     "nib-styles/responsive-grid": "~0.4.2",
     "nib-styles/v2-typography": "~0.2.0",
     "nib-styles/v2-buttons": "~1.0.0",
-    "nib-styles/v2-icons": "~1.0.0"
+    "nib-styles/v2-icons": "~1.1.0"
   }
 }
