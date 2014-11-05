@@ -10,33 +10,38 @@ body {
   color:#444;
 }
 
+a {
+	color: #009623;
+}
+
 .guide-component {
   margin-top:60px;
   padding-bottom:60px;
 }
 
 .guide-header {
-font-family: roboto;
+  font-family: roboto;
   height: 80px;
   margin: 0;
   padding-left: 40px;
-  color: #D6FAFC;
-  background: #61D2D6;
+  color: #fff;
+  background: #EA3656;
   line-height: 80px;
   font-weight: 100;
-  border-bottom: 8px #EA3656 solid;
+  border-bottom: 8px #61D2D6 solid;
   font-size: 2em;
-
 }
 
 .guide-header strong {
 	text-transform: uppercase;
-	font-weight: 100;	
+	font-weight: 100;
+	opacity: .7;	
 }
 
 .guide-navigation--primary {
-	width: 200px;
+	min-width: 200px;
 	float: left;
+	position: fixed;
 }
 
 .guide-content {
@@ -54,7 +59,7 @@ font-family: roboto;
 }
 
 .guide-list .list__item {
-  margin-bottom:10px;
+  margin-bottom:14px;
   line-height:22px;
 }
 
@@ -112,15 +117,34 @@ font-family: roboto;
   border: 1px solid #fff;
 }
 
+.guide-component__colours {
+  padding:20px 20px 20px 40px;
+  border-left:5px solid rgba(0,0,0,.2);
+  margin:0 0 5px 0;
+}
+
 .guide-component__elizabeth {
-  padding: 20px;
   background-color: #009623;
   color: #fff;
 }
 
 .guide-component__charles {
-  padding: 20px;
   background-color: #0a6d12;
+  color: #fff;
+}
+
+.guide-component__william {
+  background-color: #00a826;
+  color: #fff;
+}
+
+.guide-component__harry {
+  background-color: #26b11b;
+  color: #fff;
+}
+
+.guide-component__kate {
+  background-color: #ffb400;
   color: #fff;
 }
 
@@ -166,6 +190,11 @@ font-family: roboto;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.guide-navigation--secondary ul {
+	padding-left: 20px;
+	font-size: .8em;
 }
 
 /* === Guide back-to-top === */
