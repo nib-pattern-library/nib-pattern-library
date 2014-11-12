@@ -14,7 +14,7 @@ module.exports  = function(done) {
   Metalsmith(__dirname)
     .clean(false)
     .source('./content')
-    .use(collections({pages: {pattern: 'pages/*.html'}}))
+    .use(collections({pages: {pattern: 'pages/*.html', sortBy: 'title'}}))
     .use(function(files, metalsmith, next) {
 
       for (var path in files) {
