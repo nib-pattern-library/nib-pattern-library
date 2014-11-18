@@ -100,8 +100,13 @@ call :SelectNodeVersion
 :: 3. Install npm packages
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd !NPM_CMD! install -g rimraf
-  call :ExecuteCmd rimraf .\node_modules
+  IF %CLEAN_NODE_MODULES% EQ "1" (
+    ECHO Cleaning node_modules...
+    call :ExecuteCmd !NPM_CMD! install -g rimraf
+    call :ExecuteCmd rimraf .\node_modules
+  ) ELSE (
+    ECHO Not cleaning node_modules - set %CLEAN_NODE_MODULES% to 1 if you want
+  )
   call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
