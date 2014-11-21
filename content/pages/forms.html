@@ -198,7 +198,7 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<p class="text-small">*For singles with a taxable income of $90,000 or less, NSW/ACT. Check the price applicable to you. Conditions apply.</p>'}) %>
+    <%- partial('example', {source: '<input type="checkbox" class="copy">This is my postal address</p>'}) %>
 
 </section>
 
@@ -214,6 +214,11 @@ template:   page.html
         <li>Why it has happened</li>
         <li>What they can do about it</li>
     </ul>
+    <p>An alert should be a last resort. We should address errors before they happen, through:</p>
+    <ol>
+        <li>Forgiving and flexible inputs and processes</li>
+        <li>Supporting information such as placeholders and tooltips</li>
+    </ol>
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
@@ -227,7 +232,7 @@ template:   page.html
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Avoid "scaring" the user'
+                'Avoid alarming the user'
             ]}) %>
     
         </div>
@@ -239,3 +244,35 @@ template:   page.html
 
 <hr class="guide-separator"/>
 
+<!-- ====== Supporting information ====== !-->
+
+<section class="guide-component" id="supporting-information">
+    <h2 class="guide-component__title v2-title v2-title--2">Supporting information</h2>
+
+    <h3 class="v2-title v2-title--3">Validation/field rules</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Inform the user before they use the field, addressing potential errors before they happen',
+                'Always use clear, simple wording'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'dummy text'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <h3 class="v2-title v2-title--3">Guidance</h3>
+
+    <%- partial('example', {source: ''}) %>
+
+</section>
+
+<hr class="guide-separator"/>
