@@ -8,7 +8,7 @@ template:   page.html
 
 <p>So, let's get forms right.</p>
 
-<!-- ====== TITLE #1 ====== !-->
+<!-- ====== Section heading ====== !-->
         
 <section class="guide-component" id="section-heading">
     <h2 class="guide-component__title v2-title v2-title--2">Section heading</h2>
@@ -39,7 +39,7 @@ template:   page.html
 <hr class="guide-separator"/>
 
 
-<!-- ====== TITLE #2 ====== !-->
+<!-- ====== Subsection heading ====== !-->
 
 <section class="guide-component" id="subsection-heading">
     <h2 class="guide-component__title v2-title v2-title--2">Subsection heading</h2>
@@ -52,7 +52,7 @@ template:   page.html
 <hr class="guide-separator"/>
 
 
-<!-- ====== TITLE #3 ====== !-->
+<!-- ====== Labelling ====== !-->
 
 <section class="guide-component" id="labelling">
     <h2 class="guide-component__title v2-title v2-title--2">Labelling</h2>
@@ -86,7 +86,7 @@ template:   page.html
 <hr class="guide-separator"/>
 
 
-<!-- ====== TITLE #4 ====== !-->
+<!-- ====== Text input ====== !-->
 
 <section class="guide-component" id="text-input">
     <h2 class="guide-component__title v2-title v2-title--2">Text input</h2>
@@ -116,10 +116,10 @@ template:   page.html
 <hr class="guide-separator"/>
 
 
-<!-- ====== Body Copy ====== !-->
+<!-- ====== Radio button ====== !-->
 
-<section class="guide-component" id="radio-buttons">
-    <h2 class="guide-component__title v2-title v2-title--2">Radio buttons</h2>
+<section class="guide-component" id="radio-button">
+    <h2 class="guide-component__title v2-title v2-title--2">Radio button</h2>
     <p>Radio Buttons are used when a choice is required between two or more options. With radio buttons, a selection is mandatory.</p>
         
     <div class="rg-Grid">
@@ -145,7 +145,7 @@ template:   page.html
 
 <hr class="guide-separator"/>
 
-<!-- ====== Link ====== !-->
+<!-- ====== Select box ====== !-->
 
 <section class="guide-component" id="select-box">
     <h2 class="guide-component__title v2-title v2-title--2">Select box</h2>
@@ -175,31 +175,65 @@ template:   page.html
 
 <hr class="guide-separator"/>
 
-<!-- ====== Disclaimers ====== !-->
+<!-- ====== Checkbox ====== !-->
 
-<section class="guide-component" id="Disclaimers">
-    <h2 class="guide-component__title v2-title v2-title--2">Disclaimers</h2>
+<section class="guide-component" id="checkbox">
+    <h2 class="guide-component__title v2-title v2-title--2">Checkbox</h2>
+    <p>Checkboxes are used when there are lists of options (or a single option) and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others.</p>
         
     <div class="rg-Grid">
-        <!--
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Align at designer\'s discretion'
+                'Dummy text'
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'As with button labelling, avoiding using ambiguous labels such as "click here"'
+                'Dummy text'
             ]}) %>
     
         </div>
-    -->
     </div>
 
     <%- partial('example', {source: '<p class="text-small">*For singles with a taxable income of $90,000 or less, NSW/ACT. Check the price applicable to you. Conditions apply.</p>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+
+<!-- ====== Alerts and validation ====== !-->
+
+<section class="guide-component" id="alerts-and-validation">
+    <h2 class="guide-component__title v2-title v2-title--2">Alerts and validation</h2>
+    <p>We use alerts to let the user know:</p>
+    <ul>
+        <li>What has happened and the impact on them</li>
+        <li>Why it has happened</li>
+        <li>What they can do about it</li>
+    </ul>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Use multiple indicators for communicating the nature of the alert e.g. background colour, copy, icons',
+                'Carefully consider the nature of the alert and the attention required e.g. error vs success vs alert'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Avoid "scaring" the user'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <%- partial('example', {source: ''}) %>
 
 </section>
 
