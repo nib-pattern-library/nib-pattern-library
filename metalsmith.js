@@ -40,7 +40,10 @@ module.exports  = function(done) {
     .use(function(files, metalsmith, next) { //parse the page content and render any partials
 
       function partial(path, data) {
-        return ejs.render(fs.readFileSync(__dirname+'/templates/partials/'+path+'.html').toString(), {locals: data}) //TODO: handle errors
+        return ejs.render(fs.readFileSync(__dirname+'/templates/partials/'+path+'.html').toString(), {
+          locals: data,
+          partial: partial
+        }) //TODO: handle errors
       }
 
       for (var path in files) {
