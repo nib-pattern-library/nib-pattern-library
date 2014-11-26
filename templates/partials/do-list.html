@@ -1,8 +1,4 @@
 <div class="guide-list guide-list--do">
-        <i class="v2-icon v2-icon--small v2-icon--tick"></i> 
-    <ul class="list">
-        <% items.forEach(function(item) { %>
-        <li class="list__item"><%- item %></li>
-        <% }) %>
-    </ul>
+    <i class="v2-icon v2-icon--small v2-icon--tick"></i>
+    <%- partial('list', {items: items}) %>
 </div>

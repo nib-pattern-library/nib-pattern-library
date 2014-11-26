@@ -10,10 +10,6 @@ body {
   color:rgb(52, 73, 94);
 }
 
-a {
-	color: #009623;
-}
-
 .guide-component {
   margin-top:60px;
   padding-bottom:60px;
@@ -59,7 +55,7 @@ a {
 }
 
 .guide-list .list__item {
-  margin-bottom:10px;
+  margin-bottom:14px;
   line-height:22px;
 }
 
@@ -117,15 +113,34 @@ a {
   border: 1px solid #fff;
 }
 
+.guide-component__colours {
+  padding:20px 20px 20px 40px;
+  border-left:5px solid rgba(0,0,0,.2);
+  margin:0 0 5px 0;
+}
+
 .guide-component__elizabeth {
-  padding: 20px;
   background-color: #009623;
   color: #fff;
 }
 
 .guide-component__charles {
-  padding: 20px;
   background-color: #0a6d12;
+  color: #fff;
+}
+
+.guide-component__william {
+  background-color: #00a826;
+  color: #fff;
+}
+
+.guide-component__harry {
+  background-color: #26b11b;
+  color: #fff;
+}
+
+.guide-component__kate {
+  background-color: #ffb400;
   color: #fff;
 }
 
@@ -189,8 +204,8 @@ a {
   margin-right: 10px;
   padding: 10px;
   cursor: pointer;
-  border-radius-topleft: 3px;
-  border-radius-topright: 3px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   border: 1px solid #ccc;
   background-color: #efefef;
 }

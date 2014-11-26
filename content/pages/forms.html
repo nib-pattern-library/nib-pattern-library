@@ -1,236 +1,278 @@
 ---
-slug:       forms
+slug:       Forms   
 title:      Forms
 template:   page.html
 ---
 
-<p>Colours are neat</p>
+<p>We use forms to give customers the ability to provide us with information. Forms matter because the failure of form results in failure demand or a loss sale. We don't like this stuff</p>
 
-<!-- ====== TITLE #1 ====== !-->
+<p>So, let's get forms right.</p>
+
+<!-- ====== Section heading ====== !-->
         
-<section class="guide-component" id="title-1">
-    <h2 class="guide-component__title v2-title v2-title--2">Title 1</h2>
-    <h3 class="v2-title v2-title--3">Usage</h3>
+<section class="guide-component" id="section-heading">
+    <h2 class="guide-component__title v2-title v2-title--2">Section heading</h2>
+    <p>Use the field set to represent a set of form controls e.g ADDRESS DETAILS or Payments. The headings separate sections on the page and make it easy for the user to navigate the form.</p>
     
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Top of the the page only',
-                'Commonly used on landing pages e.g. <a href=\"http://www.nib.com.au/\">home page</a>',
-                'Sentence case only'
+                'Should clearly summarise the content of the section',
+                'Should be distinct from each other and unambiguous'
             ]}) %>
 
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Use more than once on the page',
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'dummy text'
             ]}) %>
 
         </div>
     </div>
 
-    <%- partial('example', {source: '<h1 class="v2-title v2-title--1">Great value health insurance</h1>'}) %>
+    <%- partial('example', {source: '<h2 class="Title-2">ADDRESS DETAILS</h2>'}) %>
     
 </section>
         
 <hr class="guide-separator"/>
 
 
-<!-- ====== TITLE #2 ====== !-->
+<!-- ====== Subsection heading ====== !-->
 
-<section class="guide-component" id="title-2">
-    <h2 class="guide-component__title v2-title v2-title--2">Title 2</h2>
-    <h3 class="v2-title v2-title--3">Usage</h3>
+<section class="guide-component" id="subsection-heading">
+    <h2 class="guide-component__title v2-title v2-title--2">Subsection heading</h2>
+    <p>Use a sub section heading when there are multiple inputs to answer. For example radio buttons or check boxes. The sub section heading contains the "question text" in these situations.</p>
+
+    <%- partial('example', {source: '<h3 class="Title-3">Home address</h3>'}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
+
+
+<!-- ====== Labelling ====== !-->
+
+<section class="guide-component" id="labelling">
+    <h2 class="guide-component__title v2-title v2-title--2">Labelling</h2>
+    <p>A good label significantly helps form conversion by adding clarity without overwhelming users.</p>
+    <p>The purpose of the label is to indicate what data is required in the field. All input fields are required to have labels.</p>
+    <p>Labels should be clear and easy to understand. If the label is ambiguous, users will either guess an answer causing problems down the track, or leave the form altogether.</p>
     
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Can be used multiple times',
-                'Used to label sections',
-                'Sentence case only'
+                '<b>For text inputs</b>, align labels to the left and above the field',
+                '<b>For radio buttons</b>, align to the right of the input',
+                '<b>For all labels</b>, ensure an obvious proximity to the relevant input' 
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Use as first title on the page',
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'Dummy text'
             ]}) %>
     
         </div>
     </div>
 
-    <%- partial('example', {source: '<h1 class="v2-title v2-title--2">Great value health insurance</h1>'}) %>
-    
+    <%- partial('example', {source: '<label class="control-label">Phone number</label>'}) %>
+
 </section>
-        
+
 <hr class="guide-separator"/>
 
 
-<!-- ====== TITLE #3 ====== !-->
+<!-- ====== Text input ====== !-->
 
-<section class="guide-component" id="title-3">
-    <h2 class="guide-component__title v2-title v2-title--2">Title 3</h2>
-    <h3 class="v2-title v2-title--3">Usage</h3>
-    
+<section class="guide-component" id="text-input">
+    <h2 class="guide-component__title v2-title v2-title--2">Text input</h2>
+        
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Only to be used after a title 2',
-                'Can be used multiple times',
-                'Used as a sub-label'
+                'Use for a string of characters',
+                'Use for a single line of content',
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'Avoid field length that goes over 60 characters as this creates poor readability'
             ]}) %>
     
         </div>
     </div>
 
-    <%- partial('example', {source: '<h1 class="v2-title v2-title--3">Great value health insurance</h1>'}) %>
+    <%- partial('example', {source: '<input id="firstName" name="firstName" type="text" maxlength="24" class="control control-input control-input--text"></input>'}) %>
 
 </section>
-
+        
 <hr class="guide-separator"/>
 
 
-<!-- ====== TITLE #4 ====== !-->
+<!-- ====== Radio button ====== !-->
 
-<section class="guide-component" id="title-4">
-    <h2 class="guide-component__title v2-title v2-title--2">Title 4</h2>
-    <h3 class="v2-title v2-title--3">Usage</h3>
+<section class="guide-component" id="radio-button">
+    <h2 class="guide-component__title v2-title v2-title--2">Radio button</h2>
+    <p>Radio Buttons are used when a choice is required between two or more options. With radio buttons, a selection is mandatory.</p>
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Only to be used after a title 3',
-                'Can be used multiple times',
-                'Used as a sub-label'
+                'Make each option an exclusive choice',
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Exceed 140 characters',
-                'Add hyphens to line wrap text'
+                'Don\'t use long or ambiguous option labels'
             ]}) %>
     
         </div>
     </div>
 
-    <%- partial('example', {source: '<h1 class="v2-title v2-title--4">Great value health insurance</h1>'}) %>
+    <%- partial('example', {source: '<div class="control"><label for="male" class="control-label--radio control-label--radio-first"}"><input id="male" name="gender" type="radio" value="Male" class="hoverhand t-gender-male ng-isolate-scope ng-pristine ng-invalid ng-invalid-required" required="">Male</label></div>'}) %>
 
 </section>
-        
+
 <hr class="guide-separator"/>
 
+<!-- ====== Select box ====== !-->
 
-<!-- ====== Body Copy ====== !-->
-
-<section class="guide-component" id="body-copy">
-    <h2 class="guide-component__title v2-title v2-title--2">Copy</h2>
-    <h3 class="v2-title v2-title--3">Usage</h3>
+<section class="guide-component" id="select-box">
+    <h2 class="guide-component__title v2-title v2-title--2">Select box</h2>
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'For paragraphs and general elements',
-                'Use minimum of 20px margin bottom between paragraphs',
-                'Prefer left aligned'
+                'Use in cases when there are many possible options',
+                'Use when the user doesn\'t need to know all the possible options to correctly answer',
+                'For long lists use auto-complete or auto-suggest'
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'use a font size less than 14px',
-                'add hyphens to line wrap text',
-                'exceed six columns on a desktop',
-                'center large blocks of text',
-                'justify text'
+                'Avoid using when the user needs to compare all the options '
             ]}) %>
     
         </div>
     </div>
 
-    <%- partial('example', {source: '<p class="v2-copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+    <%- partial('example', {source: '<select class="control control-input control-input--select"><option>Option 1</option><option>Option 2</option></select>'}) %>
 
 </section>
 
 <hr class="guide-separator"/>
 
-<!-- ====== Link ====== !-->
+<!-- ====== Checkbox ====== !-->
 
-<section class="guide-component" id="link">
-    <h2 class="guide-component__title v2-title v2-title--2">Link</h2>
-    <h3 class="v2-title v2-title--3">Usage</h3>
+<section class="guide-component" id="checkbox">
+    <h2 class="guide-component__title v2-title v2-title--2">Checkbox</h2>
+    <p>Checkboxes are used when there are lists of options (or a single option) and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others.</p>
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Use in paragraphs',
-                'USe meaningful labelling of links e.g. Hospital cover'
+                'Dummy text'
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'As with button labelling, avoiding using ambiguous labels such as "click here"'
+                'Dummy text'
             ]}) %>
     
         </div>
     </div>
 
-    <%- partial('example', {source: '<p class="v2-copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our <a href="#">change your health insurance page</a>. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+    <%- partial('example', {source: '<input type="checkbox" class="copy">This is my postal address</p>'}) %>
 
 </section>
 
 <hr class="guide-separator"/>
 
-<!-- ====== Disclaimers ====== !-->
+<!-- ====== Alerts and validation ====== !-->
 
-<section class="guide-component" id="Disclaimers">
-    <h2 class="guide-component__title v2-title v2-title--2">Disclaimers</h2>
-    <h3 class="v2-title v2-title--3">Usage</h3>
+<section class="guide-component" id="alerts-and-validation">
+    <h2 class="guide-component__title v2-title v2-title--2">Alerts and validation</h2>
+    <p>We use alerts to let the user know:</p>
+    <ul>
+        <li>What has happened and the impact on them</li>
+        <li>Why it has happened</li>
+        <li>What they can do about it</li>
+    </ul>
+    <p>An alert should be a last resort. We should address errors before they happen, through:</p>
+    <ol>
+        <li>Forgiving and flexible inputs and processes</li>
+        <li>Supporting information such as placeholders and tooltips</li>
+    </ol>
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Align at designer\'s discretion'
+                'Use multiple indicators for communicating the nature of the alert e.g. background colour, copy, icons',
+                'Carefully consider the nature of the alert and the attention required e.g. error vs success vs alert'
             ]}) %>
     
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'As with button labelling, avoiding using ambiguous labels such as "click here"'
+                'Avoid alarming the user'
             ]}) %>
     
         </div>
     </div>
 
-    <%- partial('example', {source: '<p class="text-small">*For singles with a taxable income of $90,000 or less, NSW/ACT. Check the price applicable to you. Conditions apply.</p>'}) %>
+    <%- partial('example', {source: ''}) %>
 
 </section>
 
 <hr class="guide-separator"/>
 
+<!-- ====== Supporting information ====== !-->
+
+<section class="guide-component" id="supporting-information">
+    <h2 class="guide-component__title v2-title v2-title--2">Supporting information</h2>
+
+    <h3 class="v2-title v2-title--3">Validation/field rules</h3>
+        
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Inform the user before they use the field, addressing potential errors before they happen',
+                'Always use clear, simple wording'
+            ]}) %>
+    
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'dummy text'
+            ]}) %>
+    
+        </div>
+    </div>
+
+    <h3 class="v2-title v2-title--3">Guidance</h3>
+
+    <%- partial('example', {source: ''}) %>
+
+</section>
+
+<hr class="guide-separator"/>

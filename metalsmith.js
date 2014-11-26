@@ -14,7 +14,7 @@ module.exports  = function(done) {
   Metalsmith(__dirname)
     .clean(false)
     .source('./content')
-    .use(collections({pages: {pattern: 'pages/*.html'}}))
+    .use(collections({pages: {pattern: 'pages/*.html', sortBy: 'title'}}))
     .use(function(files, metalsmith, next) {
 
       for (var path in files) {
@@ -40,7 +40,10 @@ module.exports  = function(done) {
     .use(function(files, metalsmith, next) { //parse the page content and render any partials
 
       function partial(path, data) {
-        return ejs.render(fs.readFileSync(__dirname+'/templates/partials/'+path+'.html').toString(), {locals: data}) //TODO: handle errors
+        return ejs.render(fs.readFileSync(__dirname+'/templates/partials/'+path+'.html').toString(), {
+          locals: data,
+          partial: partial
+        }) //TODO: handle errors
       }
 
       for (var path in files) {
