@@ -5,9 +5,7 @@ var builder   = require('nib-component-builder');
 var open      = require('open');
 
 gulp.task('clean', function(done) {
-  rimraf('public/', function() {
-	rimraf('build/', done);
-  });
+  rimraf('build/', done)
 });
 
 gulp.task('metalsmith', function(done) {
@@ -15,7 +13,7 @@ gulp.task('metalsmith', function(done) {
 });
 
 gulp.task('component', function(done) {
-  builder('components', {installDir: __dirname+'/public/components', buildDir:  __dirname+'/public/assets'}, function(errors) {
+  builder('components', {installDir: __dirname+'/build/components', buildDir:  __dirname+'/build/assets'}, function(errors) {
     if (errors.length) {
       done(errors[0]);
     } else {
@@ -25,7 +23,7 @@ gulp.task('component', function(done) {
 });
 
 gulp.task('open', function() {
-  open('./public/index.html')
+  open('./build/index.html')
 });
 
 gulp.task('watch', function() {
