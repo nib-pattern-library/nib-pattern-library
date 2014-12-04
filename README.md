@@ -1,7 +1,12 @@
 # nib-pattern-library
 
+### Production (production branch)
 This is the pattern library for the web at nib. [View online](http://nib-pattern-library.azurewebsites.net).
 You can also check the current [deployment status](http://nib-pattern-library-admin.azurewebsites.net).
+
+### Staging (master branch)
+Staging environment. [View online](http://nib-pattern-library-admin.azurewebsites.net).
+You can also check the current [deployment status](http://nib-pattern-library-admin-staging.azurewebsites.net).
 
 ## Prerequisites
 
