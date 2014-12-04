@@ -5,7 +5,7 @@ This is the pattern library for the web at nib. [View online](http://nib-pattern
 You can also check the current [deployment status](http://nib-pattern-library-admin.azurewebsites.net).
 
 ### Staging (master branch)
-Staging environment. [View online](http://nib-pattern-library-admin.azurewebsites.net).
+Staging environment. [View online](http://nib-pattern-library-staging.azurewebsites.net).
 You can also check the current [deployment status](http://nib-pattern-library-admin-staging.azurewebsites.net).
 
 ## Prerequisites
