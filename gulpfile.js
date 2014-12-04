@@ -3,6 +3,7 @@ var sequence  = require('run-sequence');
 var rimraf    = require('rimraf');
 var builder   = require('nib-component-builder');
 var open      = require('open');
+var prefixer  = require('gulp-autoprefixer');
 
 gulp.task('clean', function(done) {
   rimraf('build/', done)
@@ -20,6 +21,13 @@ gulp.task('component', function(done) {
       done();
     }
   });
+});
+
+gulp.task('autoprefix', function() {
+  return gulp.src('build/assets/*.css')
+    .pipe(prefixer({browsers: ['last 2 versions']}))
+    .pipe(gulp.dest('build/assets'))
+  ;
 });
 
 gulp.task('open', function() {
@@ -49,6 +57,7 @@ gulp.task('build', ['clean'], function() {
 gulp.task('default', ['clean'], function() {
   sequence(
     ['metalsmith', 'component'],
+    ['autoprefix'],
     ['open']
   );
 });

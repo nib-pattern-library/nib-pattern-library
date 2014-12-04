@@ -5,6 +5,7 @@
     "ejs": "^1.0.0",
     "extend": "^2.0.0",
     "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^2.0.0",
     "metalsmith": "^0.11.0",
     "metalsmith-collections": "^0.6.0",
     "metalsmith-markdown": "^0.2.1",
