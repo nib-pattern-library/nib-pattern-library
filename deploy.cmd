@@ -111,6 +111,7 @@ call :SelectNodeVersion
 :: 3. Install npm packages
 IF EXIST "%DEPLOYMENT_TEMP%\package.json" (
   pushd "%DEPLOYMENT_TEMP%"
+  echo Temp dir is %DEPLOYMENT_TEMP%
   IF /I "%CLEAN_NODE_MODULES%" EQU "1" (
     ECHO Cleaning node_modules...
     call :ExecuteCmd !NPM_CMD! install -g rimraf
