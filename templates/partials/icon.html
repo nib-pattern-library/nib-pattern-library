@@ -1,9 +1,10 @@
 <div class="guide-icon">
     <i class="guide-icon__icon v2-icon v2-icon--large v2-icon--<%= glyph %>"></i>
     <span class="guide-icon__name"><%= glyph %></span>
-        <% if (locals.aliases && aliases instanceof Array) { %>
-        	<% aliases.forEach(function(alias) { %>
-    			<span class="guide-icon__alias"><%= alias %></span>
+
+        <% if (aliases && aliases instanceof Array) { %>
+        	<% aliases.forEach(function(alias, i) { %>
+    			<span class="guide-icon__alias"><%= alias %></span><% if (i < aliases.length-1) { %>,<% } %>
     		<% }) %>
     	<% } %>
     </span>

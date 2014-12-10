@@ -173,6 +173,11 @@ body {
   display: inline-block;
 }
 
+.guide-component--class-section{
+  float: left;
+  margin-right:15px;
+}
+
 /* === Navigation == */
 
 .guide-navigation ul li {
