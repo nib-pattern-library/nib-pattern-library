@@ -150,6 +150,12 @@ template:   page.html
         aliases: ['']
     }) %>
 
+    <%- partial('icon', {
+        glyph:  'spinner',
+        aliases: ['loading'],
+        spin:    true
+    }) %>
+
 </section>
 
 <section class="guide-component" id="navigation">
@@ -256,90 +262,77 @@ template:   page.html
 
 </section>         
 
-<section class="guide-component" id="icon-clasess">
+<section class="guide-component" id="icon-classes">
     <h2 class="guide-component__title v2-title v2-title--2">Icon classes</h2>
 
     <h3 class="guide-component__title v2-title v2-title--3">Example</h3>
 
     <%- partial('example', {source: '<i class="v2-icon v2-icon--ambulance v2-icon--medium v2-icon--lightgreen v2-icon--rotate-180"></i>'}) %>
 
-</section>
-
-
-
-<hr class="guide-separator"/>
-
     <h3 class="guide-component__title v2-title v2-title--3">Sizing</h3>
 
-    <div class="guide-icon">
-        <i class="guide-icon__icon v2-icon v2-icon--smallest v2-icon--ambulance v2-icon"></i>
-        <span class="guide-icon__name">Smallest</span>
-                    <span class="guide-icon__alias">16px</span>
-    </div>
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        size:       'smallest',
+        title:      'Smallest (16px)'
+    }) %>
 
-    <div class="guide-icon">
-        <i class="guide-icon__icon v2-icon v2-icon--smaller v2-icon--ambulance"></i>
-        <span class="guide-icon__name">Smaller</span>
-                    <span class="guide-icon__alias">24px</span>
-    </div>
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        size:       'smaller',
+        title:      'Smaller (24px)'
+    }) %>
 
-    <div class="guide-icon">
-        <i class="guide-icon__icon v2-icon v2-icon--small v2-icon--ambulance"></i>
-        <span class="guide-icon__name">Small</span>
-                    <span class="guide-icon__alias">32px</span>
-    </div>
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        size:       'small',
+        title:      'Small (32px)'
+    }) %>
 
-    <div class="guide-icon">
-        <i class="guide-icon__icon v2-icon v2-icon--medium v2-icon--ambulance"></i>
-        <span class="guide-icon__name">Medium</span>
-                    <span class="guide-icon__alias">48px</span>
-    </div>
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        size:       'medium',
+        title:      'Medium (48px)'
+    }) %>
 
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        size:       'large',
+        title:      'Large (64px)'
+    }) %>
 
-    <div class="guide-icon">
-        <i class="guide-icon__icon v2-icon v2-icon--large v2-icon--ambulance"></i>
-        <span class="guide-icon__name">Large</span>
-                    <span class="guide-icon__alias">64px</span>
-    </div>
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        size:       'largest',
+        title:      'Largest (128px)'
+    }) %>
 
-
-    <div class="guide-icon">
-        <i class="guide-icon__icon v2-icon v2-icon--largest v2-icon--ambulance"></i>
-        <span class="guide-icon__name">Largest</span>
-                    <span class="guide-icon__alias">128px</span>
-    </div>
-
-
-<section class="guide-component" id="rotation">
-    <h2 class="guide-component__title v2-title v2-title--2">Rotation</h2>
+    <h3 class="guide-component__title v2-title v2-title--3" id="rotation">Rotation</h3>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         rotation:   '0',
-        subtitle:   '0deg'
+        title:      ' '
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         rotation:   '90',
-        subtitle:   '90deg'
+        title:      '90deg'
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         rotation:   '180',
-        subtitle:   '180deg'
+        title:      '180deg'
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
-        subtitle:   '270deg'
+        title:      '270deg'
     }) %>
 
-</section>
-
-<section class="guide-component" id="colours">
-    <h2 class="guide-component__title v2-title v2-title--2">Colours</h2>
+    <h3 class="guide-component__title v2-title v2-title--3" id="colours">Colours</h3>
 
     <%- partial('icon', {
         glyph:      'ambulance',
@@ -347,45 +340,35 @@ template:   page.html
         title:      'Light Green'
     }) %>
 
-    <ul class="hlist">
-
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--lightgreen"></i>
-            <code>v2-icon--lightgreen</code>
-        </li>
-
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--darkgreen"></i>
-            <code>v2-icon--darkgreen</code>
-        </li>
-
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--lightgrey"></i>
-            <code>v2-icon--lightgrey</code>
-        </li>
-
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--darkgrey"></i>
-            <code>v2-icon--darkgrey</code>
-        </li>
-
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--white"></i>
-            <code>v2-icon--white</code>
-        </li>
-
-    </ul>
-</section>
-
-<section class="guide-component" id="spinner">
-    <h2 class="guide-component__title v2-title v2-title--2">Spinner</h2>
-
     <%- partial('icon', {
-        glyph:      'spinner',
-        colour:     'spin'
+        glyph:      'ambulance',
+        colour:     'darkgreen',
+        title:      'Dark Green'
     }) %>
 
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        colour:     'lightgrey',
+        title:      'Light Grey'
+    }) %>
 
-    <i class="v2-icon v2-icon--large v2-icon--spinner v2-icon--spin"></i>
-    <code>v2-icon--spinner v2-icon--spin</code>
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        colour:     'darkgrey',
+        title:      'Dark Grey'
+    }) %>
+
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        colour:     'white',
+        title:      'White'
+    }) %>
+
+    <h3 class="guide-component__title v2-title v2-title--3" id="spin">Spin</h3>
+
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        spin:       'true'
+    }) %>
+
 </section>
