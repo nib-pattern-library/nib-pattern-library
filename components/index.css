@@ -156,7 +156,7 @@ body {
   vertical-align: top;
 }
 
-.guide-icon__name {
+.guide-icon__title {
   display: block;
   font-weight: 700;
   text-transform: uppercase;
@@ -165,12 +165,11 @@ body {
   margin-top:10px;
 }
 
-.guide-icon__alias {
-  display: block;
+.guide-icon__subtitle {
+  display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
-  display: inline-block;
 }
 
 .guide-component--class-section{

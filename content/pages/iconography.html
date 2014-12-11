@@ -274,27 +274,41 @@ template:   page.html
 
 <section class="guide-component" id="rotation">
     <h2 class="guide-component__title v2-title v2-title--2">Rotation</h2>
-    <ul>
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--small"></i>
-        </li>
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--rotate-90"></i>
-            <code>v2-icon--rotate-90</code>
-        </li>
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--rotate-180"></i>
-            <code>v2-icon--rotate-180</code>
-        </li>
-        <li>
-            <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--rotate-270"></i>
-            <code>v2-icon--rotate-270</code>
-        </li>
-    </ul>
+
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        rotation:   '0',
+        subtitle:   '0deg'
+    }) %>
+
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        rotation:   '90',
+        subtitle:   '90deg'
+    }) %>
+
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        rotation:   '180',
+        subtitle:   '180deg'
+    }) %>
+
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        subtitle:   '270deg'
+    }) %>
+
 </section>
 
 <section class="guide-component" id="colours">
     <h2 class="guide-component__title v2-title v2-title--2">Colours</h2>
+
+    <%- partial('icon', {
+        glyph:      'ambulance',
+        colour:     'lightgreen',
+        title:      'Light Green'
+    }) %>
+
     <ul class="hlist">
 
         <li>
@@ -327,6 +341,13 @@ template:   page.html
 
 <section class="guide-component" id="spinner">
     <h2 class="guide-component__title v2-title v2-title--2">Spinner</h2>
+
+    <%- partial('icon', {
+        glyph:      'spinner',
+        colour:     'spin'
+    }) %>
+
+
     <i class="v2-icon v2-icon--large v2-icon--spinner v2-icon--spin"></i>
     <code>v2-icon--spinner v2-icon--spin</code>
 </section>
