@@ -14,6 +14,10 @@ template:   page.html
 
 <p>For your designs, you can find the source <code>*.svg</code> files <a href="https://github.com/nib-styles/v2-icons/tree/master/images">here</a>.</p>
 
+    <h2 class="guide-component__title v2-title v2-title--2">Example</h2>
+
+    <%- partial('example', {source: '<i class="v2-icon v2-icon--ambulance v2-icon--medium v2-icon--lightgreen v2-icon--rotate-180"></i>'}) %>
+
 <section class="guide-component" id="Core">
 
     <h2 class="guide-component__title v2-title v2-title--2">Core</h2>
@@ -262,12 +266,8 @@ template:   page.html
 
 </section>         
 
-<section class="guide-component" id="classes-modifiers">
-    <h2 class="guide-component__title v2-title v2-title--2">Classes and modifiers</h2>
-
-    <h3 class="guide-component__title v2-title v2-title--3">Example</h3>
-
-    <%- partial('example', {source: '<i class="v2-icon v2-icon--ambulance v2-icon--medium v2-icon--lightgreen v2-icon--rotate-180"></i>'}) %>
+<section class="guide-component" id="modifiers">
+    <h2 class="guide-component__title v2-title v2-title--2">Modifiers</h2>
 
     <h3 class="guide-component__title v2-title v2-title--3">Sizing</h3>
 
@@ -320,6 +320,9 @@ template:   page.html
 
     <h3 class="guide-component__title v2-title v2-title--3" id="rotation">Rotation</h3>
 
+    <p>We rotate icons with css to reduce uneeded duplication, apply these classes to rotate icons where appropriate, rotation is always clockwise.</p>
+    <p>Particularly useful for the <a href="#navigation" class="v2-link">navigation set</a>, where direction of the icon should imply what will happen. Consider using animation when rotating icons.</p>
+
     <%- partial('icon', {
         glyph:      'ambulance',
         rotation:   '0',
@@ -351,6 +354,8 @@ template:   page.html
     }) %>
 
     <h3 class="guide-component__title v2-title v2-title--3" id="colours">Colours</h3>
+
+    <p>Colours should be matched to the colour of the accompanying text.</p>
 
     <%- partial('icon', {
         glyph:      'ambulance',
@@ -393,6 +398,8 @@ template:   page.html
     }) %>
 
     <h3 class="guide-component__title v2-title v2-title--3" id="spin">Spin</h3>
+
+    <p>Generally only used for spinner.</p>
 
     <%- partial('icon', {
         glyph:      'ambulance',
