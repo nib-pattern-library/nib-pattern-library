@@ -169,10 +169,17 @@ body {
   margin-top:10px;
 }
 
-.guide-icon__subtitle {
+.guide-icon__alias {
   display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
+  line-height: 18px;
+}
+
+.guide-icon__subtitle {
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 14px;
   line-height: 18px;
 }
 

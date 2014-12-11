@@ -262,8 +262,8 @@ template:   page.html
 
 </section>         
 
-<section class="guide-component" id="icon-classes">
-    <h2 class="guide-component__title v2-title v2-title--2">Icon classes</h2>
+<section class="guide-component" id="classes-modifiers">
+    <h2 class="guide-component__title v2-title v2-title--2">Classes and modifiers</h2>
 
     <h3 class="guide-component__title v2-title v2-title--3">Example</h3>
 
@@ -274,37 +274,48 @@ template:   page.html
     <%- partial('icon', {
         glyph:      'ambulance',
         size:       'smallest',
-        title:      'Smallest (16px)'
+        title:      'Smallest (16px)',
+        subtitle:   'v2-icon--smallest'
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         size:       'smaller',
-        title:      'Smaller (24px)'
+        title:      'Smaller (24px)',
+        subtitle:   'v2-icon--smaller'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         size:       'small',
-        title:      'Small (32px)'
+        title:      'Small (32px)',
+        subtitle:   'v2-icon--small'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         size:       'medium',
-        title:      'Medium (48px)'
+        title:      'Medium (48px)',
+        subtitle:   'v2-icon--medium'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         size:       'large',
-        title:      'Large (64px)'
+        title:      'Large (64px)',
+        subtitle:   'v2-icon--large'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         size:       'largest',
-        title:      'Largest (128px)'
+        title:      'Largest (128px)',
+        subtitle:   'v2-icon--largest'
+
     }) %>
 
     <h3 class="guide-component__title v2-title v2-title--3" id="rotation">Rotation</h3>
@@ -312,24 +323,31 @@ template:   page.html
     <%- partial('icon', {
         glyph:      'ambulance',
         rotation:   '0',
-        title:      ' '
+        title:      ' ',
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         rotation:   '90',
-        title:      '90deg'
+        title:      '90deg',
+        subtitle:   'v2-icon--rotate-90'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         rotation:   '180',
-        title:      '180deg'
+        title:      '180deg',
+        subtitle:   'v2-icon--rotate-180'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
-        title:      '270deg'
+        title:      '270deg',
+        subtitle:   'v2-icon--rotate-270'
+
     }) %>
 
     <h3 class="guide-component__title v2-title v2-title--3" id="colours">Colours</h3>
@@ -337,38 +355,50 @@ template:   page.html
     <%- partial('icon', {
         glyph:      'ambulance',
         colour:     'lightgreen',
-        title:      'Light Green'
+        title:      'Light Green',
+        subtitle:   'v2-icon--lightgreen'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         colour:     'darkgreen',
-        title:      'Dark Green'
+        title:      'Dark Green',
+        subtitle:   'v2-icon--darkgreen'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         colour:     'lightgrey',
-        title:      'Light Grey'
+        title:      'Light Grey',
+        subtitle:   'v2-icon--lightgrey'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         colour:     'darkgrey',
-        title:      'Dark Grey'
+        title:      'Dark Grey',
+        subtitle:   'v2-icon--darkgrey'
+
     }) %>
 
     <%- partial('icon', {
         glyph:      'ambulance',
         colour:     'white',
-        title:      'White'
+        title:      'White',
+        subtitle:   'v2-icon--white'
+
     }) %>
 
     <h3 class="guide-component__title v2-title v2-title--3" id="spin">Spin</h3>
 
     <%- partial('icon', {
         glyph:      'ambulance',
-        spin:       'true'
+        spin:       'true',
+        subtitle:   'v2-icon--spin'
+
     }) %>
 
 </section>
