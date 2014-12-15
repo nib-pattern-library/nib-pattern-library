@@ -194,7 +194,6 @@ body {
   list-style-image: none;
   list-style-type: none;
   text-transform: uppercase;
-
 }
 
 .guide-navigation ul li a {
@@ -231,7 +230,14 @@ body {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-  
+
+/* === Guide footer === */
+
+.guide-footer {
+  color: #ccc;
+  text-align: center;
+}
+
 /* === Guide back-to-top === */
 
 .guide-back-to-top {
