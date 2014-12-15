@@ -45,6 +45,8 @@ body {
 	padding-right:40px;
 }
 
+/* === list === */
+
 .guide-list .list {
   border-left-width: 2px;
   border-left-style: solid;
@@ -62,6 +64,8 @@ body {
 .guide-list i.v2-icon{
   float:left;
 }
+
+/* === do/don't list === */
 
 .guide-list--do .list {
   border-color: #5ce582;
@@ -149,9 +153,9 @@ body {
 .guide-icon {
   display: inline-block;
   text-align: center;
-  margin-right:40px;  
+  margin-right:20px;  
   margin-bottom: 40px;
-  width:140px;
+  width:110px;
   height: 120px;
   vertical-align: top;
 }
@@ -165,10 +169,17 @@ body {
   margin-top:10px;
 }
 
-.guide-icon__subtitle {
+.guide-icon__alias {
   display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
+  line-height: 18px;
+}
+
+.guide-icon__subtitle {
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -212,6 +223,15 @@ body {
 	line-height: 1em;
 }
 
+.guide-navigation ul li a:hover {
+  background: #ECCF46;
+  color: #EA3656;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+  
 /* === Guide back-to-top === */
 
 .guide-back-to-top {
@@ -232,22 +252,15 @@ body {
 
 /* ====== used on the typography page ====== */
 
+/* ====== utils ====== */
+
 .text-small{
   font-size: 80%;
 }
 
-/* ====== utils ====== */
-
-.guide-navigation ul li a:hover {
-	background: #ECCF46;
-	color: #EA3656;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-	
 .u-hidden {
   display: none;
 }
+
+
 
