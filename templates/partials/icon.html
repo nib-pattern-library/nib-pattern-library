@@ -16,8 +16,8 @@
         - classes   - the classes
 
 -->
-<div class="guide-icon">
-    <i class="guide-icon__icon v2-icon v2-icon--<%= glyph %> v2-icon--<%= locals.size ? size : 'large' %> <%= locals.colour ? 'v2-icon--'+colour : '' %> <%= locals.rotation ? 'v2-icon--rotate-'+rotation : '' %> <%= locals.spin ? 'v2-icon--spin' : '' %> <%= locals.classes || '' %>"></i>
+<div class="guide-icon <%= locals.classes || '' %>">
+    <i class="guide-icon__icon v2-icon v2-icon--<%= glyph %> v2-icon--<%= locals.size ? size : 'large' %> <%= locals.colour ? 'v2-icon--'+colour : '' %> <%= locals.rotation ? 'v2-icon--rotate-'+rotation : '' %> <%= locals.spin ? 'v2-icon--spin' : '' %>"></i>
     <div class="guide-icon__title"><%= locals.title || locals.glyph %></div>
     <div class="guide-icon__subtitle">
 

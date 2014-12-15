@@ -155,7 +155,7 @@ body {
   text-align: center;
   margin-right:20px;  
   margin-bottom: 40px;
-  width:110px;
+  width:115px;
   height: 120px;
   vertical-align: top;
 }
@@ -187,6 +187,7 @@ body {
   float: left;
   margin-right:15px;
 }
+
 
 /* === Navigation == */
 
@@ -262,6 +263,22 @@ body {
 
 .text-small{
   font-size: 80%;
+}
+
+.text--top{
+  vertical-align: text-top;
+}
+
+.text--middle{
+  vertical-align: middle;
+}
+
+.text--bottom{
+  vertical-align: text-bottom;
+}
+
+.text--baseline{
+  vertical-align: baseline;
 }
 
 .u-hidden {
