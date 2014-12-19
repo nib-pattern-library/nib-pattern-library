@@ -174,26 +174,26 @@ template:   page.html
 <!-- ====== Body Copy ====== !-->
 
 <section class="guide-component" id="list-copy">
-    <h2 class="guide-component__title v2-title v2-title--2">List</h2>
-
-    <p>List style for use in copy.</p>
+    <h2 class="guide-component__title v2-title v2-title--2">List (in copy)</h2>
 
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
+                'Aim to keep list item line lengths short',
             ]}) %>
 
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
+                'Avoid including more than 5 items in the one list'
             ]}) %>
 
         </div>
     </div>
 
-    <%- partial('example', {source: '<ul class="v2-list v2-list--copy"><li class="v2-list__item">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</li></ul>'}) %>
+    <%- partial('example', {source: '<ul class="v2-list v2-list--copy"><li class="v2-list__item">We\'ll recognise any waiting</li><li>Periods already served with</li><li>Your current fund</li></ul>'}) %>
 
 </section>
 
