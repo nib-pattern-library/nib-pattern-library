@@ -117,6 +117,9 @@ IF EXIST "%DEPLOYMENT_TEMP%\package.json" (
   ) ELSE (
     ECHO Not cleaning node_modules - set CLEAN_NODE_MODULES to 1 if you want
   )
+  echo Updating npm...
+  call :ExecuteCmd !NPM_CMD! install -g npm
+  echo npm install...
   call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
   ECHO npm install done
