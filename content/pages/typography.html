@@ -141,14 +141,13 @@ template:   page.html
 <!-- ====== Body Copy ====== !-->
 
 <section class="guide-component" id="body-copy">
-    <h2 class="guide-component__title v2-title v2-title--2">Copy</h2>
+    <h2 class="guide-component__title v2-title v2-title--2">Paragraphs</h2>
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
                 'For paragraphs and general elements',
-                'Use minimum of 20px margin bottom between paragraphs',
                 'Prefer left aligned',
                 'Where possible, aim for a line length of 50 - 60 characters'
             ]}) %>
@@ -167,7 +166,7 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<p class="v2-copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+    <%- partial('example', {source: '<div class="v2-copy"><p class="v2-paragraph">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p></div>'}) %>
 
 </section>
 
