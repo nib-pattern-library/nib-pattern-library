@@ -1,10 +1,6 @@
 
 /* ====== START: Guide specific styles ====== */
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 body {
   margin: 0;
@@ -151,6 +147,13 @@ body {
 .guide-component__kate {
   background-color: #ffb400;
   color: #fff;
+}
+
+.guide-input__example {
+  max-width: 400px;
+}
+.guide-input__label--invert {
+  color: #333;
 }
 
 /* === Guide Icon === */

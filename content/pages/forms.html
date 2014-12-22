@@ -204,42 +204,165 @@ template:   page.html
 
 <hr class="guide-separator"/>
 
-<!-- ====== Alerts and validation ====== !-->
+<!-- ====== Validation ====== !-->
 
-<section class="guide-component" id="alerts-and-validation">
-    <h2 class="guide-component__title v2-title v2-title--2">Alerts and validation</h2>
-    <p>We use alerts to let the user know:</p>
-    <ul>
-        <li>What has happened and the impact on them</li>
-        <li>Why it has happened</li>
-        <li>What they can do about it</li>
-    </ul>
-    <p>An alert should be a last resort. We should address errors before they happen, through:</p>
-    <ol>
-        <li>Forgiving and flexible inputs and processes</li>
-        <li>Supporting information such as placeholders and tooltips</li>
-    </ol>
-        
+<section class="guide-component" id="validation">
+    <h2 class="guide-component__title v2-title v2-title--2">Validation</h2>
+
+    <h3 class="guide-component__title v2-title v2-title--3">Usage</h3>
+    <p>We aim to show as few validation messages as possible. Users should know what to input without relying on validation messages.</p>
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Use multiple indicators for communicating the nature of the alert e.g. background colour, copy, icons',
-                'Carefully consider the nature of the alert and the attention required e.g. error vs success vs alert'
+            'Validation messages should be clear, allowing users to know what is wrong and how to fix it',
+            'Avoid validation by restricting input where possible e.g. a date selector, select box or radio buttons'
             ]}) %>
-    
+
         </div>
         <div class="rg-Unit rg-6of12 rg-pl2at12">
 
             <%- partial('dont-list', {items: [
-                'Avoid alarming the user'
+            'don&#8217;t surprise users. Be forgiving and use standard patterns',
+            ''
             ]}) %>
-    
+
+
+        </div>
+    </div>
+    <h3 class="guide-component__title v2-title v2-title--3">Timing and positioning</h3>
+    <p>Display the validation message as soon as possible without giving false-positives. </p>
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+            'display validation as soon as possible e.g. show as soon as user enters an invalid character',
+            'Avoid validation by restricting input where possible e.g. a date selector, select box or radio buttons',
+            'Always show validation next to the input field.',
+            'Scroll to the first message when there are multiple validation messages after attempting a submit'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+            'don&#8217;t show a validation message for a partially completed field e.g. when entering the third character into a minimum 6 character field',
+            ''
+            ]}) %>
+
+
         </div>
     </div>
 
-    <%- partial('example', {source: ''}) %>
+    <h3 class="guide-component__title v2-title v2-title--3">Example</h3>
 
+    <%- partial('example', {source: '<div class="control is-invalid guide-input__example rg-mt4at4"><label class="control__label guide-input__label--invert" for="email3-input">Email address</label><div class="control__input"><input type="email" class="control-input-text" id="email3-input" /><i class="control-feedback-icon control-feedback-icon--inside no-select"></i></div><div class="control-feedback-message is-error no-select" style="height: auto;"><div class="tip--direction-u"></div><p class="control-feedback-message__text">Email address cannot be empty.</p></div></div>'}) %>
+
+</section>
+                
+<!-- ====== Alerts ====== !-->
+
+
+<section class="guide-component" id="alerts">
+    <h2 class="guide-component__title v2-title v2-title--2">Alerts</h2>
+    <%- partial('example', {source:'<div class="v2-validation-msg v2-validation-msg__success margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>'}) %>
+
+    <h3 class="guide-component__title v2-title v2-title--3">Success</h3>
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+            'Should indicate that the task is complete and no more input is required for the current task',
+            'Wording should reassure the user that we have received the request and no further action is required'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+            'Should not be used in the middle of a task e.g. don&#8217;t use for each field in a form',
+            ''
+            ]}) %>
+
+
+        </div>
+    </div>
+    <div class="v2-validation-msg v2-validation-msg__success margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
+
+    <h3 class="guide-component__title v2-title v2-title--3">Information</h3>
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+            'Call out an important piece of information that helps the user complete thier task',
+            'Message can have an indirect action e.g. please review the image you just uploaded',
+            'Use sparingly to call out important or temporary information. If everything is important, nothing is'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+            'Should not have direct actions e.g. enter your first name into the next field.',
+            'Instructions and general page content should not be used in information alerts',
+            ]}) %>
+
+
+        </div>
+    </div>
+    <div class="v2-validation-msg v2-validation-msg__info margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
+
+    <h3 class="guide-component__title v2-title v2-title--3">Warning</h3>
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+            'Alert user to reduced website functionality',
+            'Use when there is an issue outside the users direct control. e.g. Incompatible version of IE, scheduled maintanence or no internet connection'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+            'Should never be displayed if there is full website functionality',
+            ''
+            ]}) %>
+
+
+        </div>
+    </div>
+    <div class="v2-validation-msg v2-validation-msg__warning margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
+
+    <h3 class="guide-component__title v2-title v2-title--3">Error</h3>
+    <p>An error alert should be a last resort. We should address errors before they happen, through:</p>
+    <ol>
+        <li>Forgiving and flexible inputs and processes</li>
+        <li>Catching all validation errors in the inline validation</li>
+        <li>Supporting information such as placeholders and tooltips</li>
+    </ol>
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+            'The opposite of success, this alert should inform the user that their request has not been received by us',
+            'Tell the user what went has happenend and the impact on them',
+            'Give the user a way out'            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+            'Should only be a last line of defence',
+            'Avoid using as validation message',
+            'Never blame the user',
+            'Avoid alarming the user'
+            ]}) %>
+
+
+        </div>
+    </div>
+    <div class="v2-validation-msg v2-validation-msg__error margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
 </section>
 
 <hr class="guide-separator"/>
