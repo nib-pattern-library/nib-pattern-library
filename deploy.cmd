@@ -120,7 +120,7 @@ IF EXIST "%DEPLOYMENT_TEMP%\package.json" (
   echo Updating npm...
   call :ExecuteCmd !NPM_CMD! install -g npm
   call :ExecuteCmd !NPM_CMD! install replace
-  call :ExecuteCmd !NODE_EXE! node_modules/replace/bin/replace http://npm:8080 https://registry.npmjs.org npm-shrinkwrap.json
+  call :ExecuteCmd "!NODE_EXE!" ./node_modules/replace/bin/replace http://npm:8080 https://registry.npmjs.org npm-shrinkwrap.json
   echo npm install...
   call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
