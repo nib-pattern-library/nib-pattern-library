@@ -1,6 +1,7 @@
 
 /* ====== START: Guide specific styles ====== */
 
+
 body {
   margin: 0;
   padding: 0;
@@ -45,6 +46,8 @@ body {
 	padding-right:40px;
 }
 
+/* === list === */
+
 .guide-list .list {
   border-left-width: 2px;
   border-left-style: solid;
@@ -62,6 +65,8 @@ body {
 .guide-list i.v2-icon{
   float:left;
 }
+
+/* === do/don't list === */
 
 .guide-list--do .list {
   border-color: #5ce582;
@@ -144,28 +149,60 @@ body {
   color: #fff;
 }
 
+.guide-input__example {
+  max-width: 400px;
+}
+.guide-input__label--invert {
+  color: #333;
+}
+
 /* === Guide Icon === */
 
 .guide-icon {
   display: inline-block;
   text-align: center;
-  margin-right:40px;  
+  margin-right:20px;  
   margin-bottom: 40px;
-  width:120px;
+  width:115px;
   height: 120px;
   vertical-align: top;
 }
 
-.guide-icon__name {
+.guide-icon__title {
   display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top:10px;
 }
+
+.guide-icon__alias {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.guide-icon__subtitle {
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.guide-component--class-section{
+  float: left;
+  margin-right:15px;
+}
+
+
 /* === Navigation == */
 
 .guide-navigation ul li {
   list-style-image: none;
   list-style-type: none;
   text-transform: uppercase;
-
 }
 
 .guide-navigation ul li a {
@@ -194,6 +231,22 @@ body {
 	line-height: 1em;
 }
 
+.guide-navigation ul li a:hover {
+  background: #ECCF46;
+  color: #EA3656;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* === Guide footer === */
+
+.guide-footer {
+  color: #ccc;
+  text-align: center;
+}
+
 /* === Guide back-to-top === */
 
 .guide-back-to-top {
@@ -214,22 +267,31 @@ body {
 
 /* ====== used on the typography page ====== */
 
+/* ====== utils ====== */
+
 .text-small{
   font-size: 80%;
 }
 
-/* ====== utils ====== */
-
-.guide-navigation ul li a:hover {
-	background: #ECCF46;
-	color: #EA3656;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+.text--top{
+  vertical-align: text-top;
 }
-	
+
+.text--middle{
+  vertical-align: middle;
+}
+
+.text--bottom{
+  vertical-align: text-bottom;
+}
+
+.text--baseline{
+  vertical-align: baseline;
+}
+
 .u-hidden {
   display: none;
 }
+
+
 

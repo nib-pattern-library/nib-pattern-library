@@ -4,9 +4,9 @@ title:      Typography
 template:   page.html
 ---
 
-<p>Typography helps create the structure and hierarchy of a page. This helps users read, absorb and comprehend the content. We use Roboto for headings and Open Sans for body and UI elements.</p>
+<p class="v2-paragraph">Typography helps create the structure and hierarchy of a page. This helps users read, absorb and comprehend the content. We use Roboto for headings and Open Sans for body and UI elements.</p>
 
-<p>These typefaces were chosen for their pairing, extensive range of weights and similarity to Helvetica.</p>
+<p class="v2-paragraph">These typefaces were chosen for their pairing, extensive range of weights and similarity to Helvetica.</p>
 
 <!-- ====== TITLE #1 ====== !-->
         
@@ -141,14 +141,13 @@ template:   page.html
 <!-- ====== Body Copy ====== !-->
 
 <section class="guide-component" id="body-copy">
-    <h2 class="guide-component__title v2-title v2-title--2">Copy</h2>
+    <h2 class="guide-component__title v2-title v2-title--2">Paragraphs</h2>
         
     <div class="rg-Grid">
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
                 'For paragraphs and general elements',
-                'Use minimum of 20px margin bottom between paragraphs',
                 'Prefer left aligned',
                 'Where possible, aim for a line length of 50 - 60 characters'
             ]}) %>
@@ -167,7 +166,34 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<p class="v2-copy">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p>'}) %>
+    <%- partial('example', {source: '<div class="v2-copy"><p class="v2-paragraph">We\'ll recognise any waiting periods already served with your current fund, so you can claim straight away. See our change your health insurance page. Any existing limits used with your current fund will carry across to nib.</p></div>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+<!-- ====== Body Copy ====== !-->
+
+<section class="guide-component" id="list-copy">
+    <h2 class="guide-component__title v2-title v2-title--2">List (in copy)</h2>
+
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Aim to keep list item line lengths short',
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Avoid including more than 5 items in the one list'
+            ]}) %>
+
+        </div>
+    </div>
+
+    <%- partial('example', {source: '<ul class="v2-list v2-list--copy"><li class="v2-list__item">We\'ll recognise any waiting</li><li>Periods already served with</li><li>Your current fund</li></ul>'}) %>
 
 </section>
 

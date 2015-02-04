@@ -1,5 +1,4 @@
 var Metalsmith  = require('metalsmith');
-var markdown    = require('metalsmith-markdown');
 var templates   = require('metalsmith-templates');
 var collections = require('metalsmith-collections');
 
@@ -14,6 +13,20 @@ module.exports  = function(done) {
   Metalsmith(__dirname)
     .clean(false)
     .source('./content')
+    .use(function(files, metalsmith, next) {
+
+      //figure out the git SHA
+      require('git-rev').short(function(version) {
+
+        //add the version as metadata for all the files
+        for (var path in files) {
+          files[path].version = version;
+        }
+
+        next();
+      });
+
+    })
     .use(collections({pages: {pattern: 'pages/*.html', sortBy: 'title'}}))
     .use(function(files, metalsmith, next) {
 

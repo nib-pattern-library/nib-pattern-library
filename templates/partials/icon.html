@@ -1,4 +1,36 @@
-<div class="guide-icon">
-    <i class="guide-icon__icon v2-icon v2-icon--large v2-icon--<%= glyph %>"></i>
-    <span class="guide-icon__name"><%= name %></span>
+<!--
+
+        Parameters:
+
+        - glyph     - the icon name (ambulance, spinner etc)
+
+        - title     - the icon title (defaults to the icon name)
+        - subtitle  - the icon subtitle
+        - aliases   - the icon aliases
+
+        - size      - the icon size (smallest, smaller, small, medium, large or largest)
+        - colour    - the icon colour (lightgreen, darkgreen, lightgrey, darkgrey or white)
+        - rotation  - the icon rotation (0, 90, 180, 270)
+        - spin      - spin the icon (true or false)
+
+        - classes   - the classes
+
+-->
+<div class="guide-icon <%= locals.classes || '' %>">
+    <i class="guide-icon__icon v2-icon v2-icon--<%= glyph %> v2-icon--<%= locals.size ? size : 'large' %> <%= locals.colour ? 'v2-icon--'+colour : '' %> <%= locals.rotation ? 'v2-icon--rotate-'+rotation : '' %> <%= locals.spin ? 'v2-icon--spin' : '' %> "></i>
+    <div class="guide-icon__title"><%= locals.title || locals.glyph %></div>
+    <div class="guide-icon__subtitle">
+
+        <% if (locals.subtitle) { %>
+            <%= subtitle %>
+        <% } %>
+
+        <% if (locals.aliases && aliases instanceof Array) { %>
+        	<% aliases.forEach(function(alias, i) { %>
+    			<span class="guide-icon__alias"><%= alias %></span><% if (i < aliases.length-1) { %>,<% } %>
+    		<% }) %>
+    	<% } %>
+
+    </div>
+
 </div>

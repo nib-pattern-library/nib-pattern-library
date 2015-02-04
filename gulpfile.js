@@ -30,8 +30,16 @@ gulp.task('autoprefix', function() {
   ;
 });
 
-gulp.task('open', function() {
-  open('./build/index.html')
+gulp.task('build-assets', function(cb) {
+  sequence(
+    'component',
+    'autoprefix',
+    cb
+  );
+});
+
+gulp.task('open', function(cb) {
+  open('./build/index.html', cb)
 });
 
 gulp.task('watch', function() {
@@ -44,20 +52,20 @@ gulp.task('watch', function() {
     ['metalsmith']
   );
 
-  gulp.watch('components/**', ['component']);
+  gulp.watch('components/**', ['build-assets']);
 
 });
 
-gulp.task('build', ['clean'], function() {
+gulp.task('build', ['clean'], function(cb) {
   sequence(
-    ['metalsmith', 'component']
+    ['metalsmith', 'build-assets'],
+    cb
   );
 });
 
-gulp.task('default', ['clean'], function() {
+gulp.task('default', ['build'], function(cb) {
   sequence(
-    ['metalsmith', 'component'],
-    ['autoprefix'],
-    ['open']
+    ['open'],
+    cb
   );
 });
