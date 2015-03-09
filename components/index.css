@@ -26,7 +26,7 @@ body {
   line-height: 80px;
   font-weight: 100;
   font-size: 1.25em;
-  width: 330px;
+  min-width: 320px;
   text-transform: uppercase;
   letter-spacing: .5em;
 }
@@ -40,12 +40,13 @@ body {
   background: #EA3656;
   line-height: 80px;
   font-weight: 100;
-  font-size: 1.25em;
+  font-size: 1em;
+  letter-spacing: .23em;
   position: fixed;
   bottom: 0;
   color: rgba(256,256,256, 0.5);
   text-transform: uppercase;
-  width: 330px;
+  min-width: 320px;
 }
 
 .guide-header strong {
@@ -227,6 +228,11 @@ color: #fff;
 	
 }
 
+.guide-navigation h4 {
+text-align: center;
+	
+}
+
 .guide-navigation ul li {
   list-style-image: none;
   list-style-type: none;
@@ -235,7 +241,7 @@ color: #fff;
 
 .guide-navigation ul li a {
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 0;
   display: inline-block;
   color: rgba(256,256,256, 0.7);
   -webkit-transition: all .3s ease-in-out;
