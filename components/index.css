@@ -65,6 +65,10 @@ body {
 	bottom: 0;
 }
 
+.guide-navigation--primary > ul {
+	padding-bottom: 180px;
+}
+
 .guide-content {
 	padding-left: 440px;
 	padding-right:40px;
@@ -225,6 +229,8 @@ body {
 .guide-navigation {
 background-color: rgb(88,57,101);
 color: #fff;
+overflow: scroll;
+
 	
 }
 
