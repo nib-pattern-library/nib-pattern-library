@@ -249,7 +249,7 @@ text-align: center;
   text-decoration: none;
   padding: 10px 15px 10px 0;
   display: inline-block;
-  color: rgba(256,256,256, 0.7);
+  color: rgba(256,256,256, 0.8);
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -257,7 +257,7 @@ text-align: center;
 }
 
 .guide-navigation ul li a:hover {
-  color: rgba(256,256,256, 0.95);
+  color: rgba(256,256,256, 100);
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
