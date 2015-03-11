@@ -1,7 +1,6 @@
 
 /* ====== START: Guide specific styles ====== */
 
-
 body {
   margin: 0;
   padding: 0;
@@ -227,16 +226,13 @@ body {
 
 /* === Navigation == */
 .guide-navigation {
-background-color: rgb(88,57,101);
-color: #fff;
-overflow: scroll;
-
-	
+  background-color: rgb(88,57,101);
+  color: #fff;
+  overflow: scroll;
 }
 
 .guide-navigation h4 {
-text-align: center;
-	
+  text-align: center;
 }
 
 .guide-navigation ul li {
@@ -250,17 +246,11 @@ text-align: center;
   padding: 10px 15px 10px 0;
   display: inline-block;
   color: rgba(256,256,256, 0.8);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .guide-navigation ul li a:hover {
   color: rgba(256,256,256, 100);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -275,9 +265,6 @@ text-align: center;
 }
 
 .guide-navigation ul li a:hover {
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
