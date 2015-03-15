@@ -63,6 +63,9 @@ body {
 	position: fixed;
 	top: 0;
 	bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
 }
 
 .guide-navigation--primary > ul {
@@ -229,7 +232,6 @@ body {
 .guide-navigation {
 background-color: rgb(88,57,101);
 color: #fff;
-overflow: scroll;
 
 	
 }
