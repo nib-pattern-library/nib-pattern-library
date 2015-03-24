@@ -125,7 +125,7 @@ body {
 .guide-example__preview {
   margin: 0 0 10px;
   padding: 10px;
-  color: #333;
+  color: #444;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #ffffff;}
@@ -133,7 +133,7 @@ body {
 .guide-example__source {
   margin: 0 0 10px;
   padding: 10px;
-  color: #333;
+  color: #444;
   font-size: 13px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   line-height: 1.42857143;
@@ -183,7 +183,7 @@ body {
   max-width: 400px;
 }
 .guide-input__label--invert {
-  color: #333;
+  color: #444;
 }
 
 /* === Guide Icon === */
