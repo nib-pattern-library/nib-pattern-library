@@ -124,6 +124,12 @@ IF EXIST "%DEPLOYMENT_TEMP%\package.json" (
   ) ELSE (
     ECHO Not cleaning node_modules - set CLEAN_NODE_MODULES to 1 if you want
   )
+  IF /I "%CLEAN_NPM_CACHE%" EQU "1" (
+    ECHO Cleaning npm cache...
+    call :ExecuteCmd !NPM_CMD! cache clean
+  ) ELSE (
+    ECHO Not cleaning npm cache - set CLEAN_NPM_CACHE to 1 if you want
+  )
   echo Updating npm...
   call :ExecuteCmd !NPM_CMD! install -g npm
   call :ExecuteCmd !NPM_CMD! install replace
