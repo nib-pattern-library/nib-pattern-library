@@ -107,12 +107,19 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 call :SelectNodeVersion
 
 :: 3. Install npm packages
+call :ExecuteCmd !NPM_CMD! install -g rimraf
+
 IF EXIST "%DEPLOYMENT_TEMP%\package.json" (
   pushd "%DEPLOYMENT_TEMP%"
+
+  IF EXIST ".\build" (
+	ECHO Cleaning build...
+    call :ExecuteCmd rimraf .\build
+  )
+
   echo Temp dir is %DEPLOYMENT_TEMP%
   IF /I "%CLEAN_NODE_MODULES%" EQU "1" (
     ECHO Cleaning node_modules...
-    call :ExecuteCmd !NPM_CMD! install -g rimraf
     call :ExecuteCmd rimraf .\node_modules
   ) ELSE (
     ECHO Not cleaning node_modules - set CLEAN_NODE_MODULES to 1 if you want
