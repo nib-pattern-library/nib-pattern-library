@@ -7,13 +7,10 @@ template:   page.html
 <h2 class="v2-title v2-title--2">General Usage</h2>
 <h2 class="v2-title v2-title--3">Labelling</h2>
 <ul>
-    <li>Open sans</li>
-    <li>Single line</li>
-    <li>12px - 18px</li>
     <li>Tell the user what the button will do</li>
     <li>DO NOT use contextless request as labels e.g. "Click here"</li>
+    <li>Single line</li>
     <li>Do not use multi-line line labels</li>
-    <li>Do not use modifiers that have not already been defined</li>
 </ul>
 
 <section>
@@ -48,7 +45,7 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<button class="v2-button v2-button--primary">Perform primary action</button>'}) %>
+    <%- partial('example', {source: '<button class="v2-button v2-button--primary">Perform the primary action</button>'}) %>
     
 </section>
         
@@ -78,7 +75,7 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<button class="v2-button v2-button--secondary-dark-grey">Perform secondary action</button>'}) %>
+    <%- partial('example', {source: '<button class="v2-button v2-button--secondary-dark-grey">Perform the secondary action</button>'}) %>
     
 </section>
         
@@ -109,7 +106,7 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<button class="v2-button v2-button--tertiary-grey">Perform tertiary action</button>'}) %>
+    <%- partial('example', {source: '<button class="v2-button v2-button--tertiary-grey">Perform the tertiary action</button>'}) %>
     
 </section>
         
@@ -138,7 +135,7 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<button class="v2-button v2-button--supplementary-green">Perform Supplementary action</button>'}) %>
+    <%- partial('example', {source: '<button class="v2-button v2-button--supplementary-green">Perform the supplementary action</button>'}) %>
     
 </section>
         
@@ -167,8 +164,20 @@ template:   page.html
         </div>
     </div>
 
-    <%- partial('example', {source: '<button class="v2-button v2-button--primary">Someone fix me <i class="v2-icon v2-icon--smallest v2-icon--chevron-circle"></i></button>'}) %>
+    <%- partial('example', {source: '<button class="v2-button v2-button--primary v2-button--icon-on-right">Perform the action with an icon <i class="v2-icon v2-icon--smallest v2-icon--chevron-circle"></i></button>'}) %>
     
 </section>
-        
+
+<!-- ====== Sizing ====== !-->
+
+<section class="guide-component" id="Sizing">
+    <h2 class="guide-component__title v2-title v2-title--2">Sizing</h2>
+
+
+    <%- partial('example', {source: '<button class="v2-button v2-button--primary">Perform the normal sized action</button>'}) %>
+    <%- partial('example', {source: '<button class="v2-button v2-button--primary v2-button--medium">Perform the medium sized action</button>'}) %>
+    <%- partial('example', {source: '<button class="v2-button v2-button--primary v2-button--large">Perform the large sized action</button>'}) %>
+
+</section>
+
 <hr class="guide-separator"/>
