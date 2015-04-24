@@ -265,7 +265,6 @@ template:   page.html
 
 <section class="guide-component" id="alerts">
     <h2 class="guide-component__title v2-title v2-title--2">Alerts</h2>
-    <%- partial('example', {source:'<div class="v2-validation-msg v2-validation-msg__success margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>'}) %>
 
     <h3 class="guide-component__title v2-title v2-title--3">Success</h3>
     <div class="rg-Grid">
@@ -284,10 +283,15 @@ template:   page.html
             ''
             ]}) %>
 
-
         </div>
     </div>
-    <div class="v2-validation-msg v2-validation-msg__success margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
+
+    <%- partial('example', {source: [
+        '<div class="v2-alert v2-alert--success">',
+        '   <div class="v2-alert__title">Message Title</div>',
+        '   Message content',
+        '</div>'
+    ].join("\n")}) %>
 
     <h3 class="guide-component__title v2-title v2-title--3">Information</h3>
     <div class="rg-Grid">
@@ -310,7 +314,13 @@ template:   page.html
 
         </div>
     </div>
-    <div class="v2-validation-msg v2-validation-msg__info margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
+
+    <%- partial('example', {source: [
+        '<div class="v2-alert v2-alert--info">',
+        '   <div class="v2-alert__title">Message Title</div>',
+        '   Message content',
+        '</div>'
+    ].join("\n")}) %>
 
     <h3 class="guide-component__title v2-title v2-title--3">Warning</h3>
     <div class="rg-Grid">
@@ -332,7 +342,13 @@ template:   page.html
 
         </div>
     </div>
-    <div class="v2-validation-msg v2-validation-msg__warning margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
+
+    <%- partial('example', {source: [
+        '<div class="v2-alert v2-alert--warning">',
+        '   <div class="v2-alert__title">Message Title</div>',
+        '   Message content',
+        '</div>'
+    ].join("\n")}) %>
 
     <h3 class="guide-component__title v2-title v2-title--3">Error</h3>
     <p>An error alert should be a last resort. We should address errors before they happen, through:</p>
@@ -362,7 +378,14 @@ template:   page.html
 
         </div>
     </div>
-    <div class="v2-validation-msg v2-validation-msg__error margin-normal"> <div class="v2-validation-msg--title">Message Title</div> Message content </div>
+
+    <%- partial('example', {source: [
+        '<div class="v2-alert v2-alert--error">',
+        '   <div class="v2-alert__title">Message Title</div>',
+        '   Message content',
+        '</div>'
+    ].join("\n")}) %>
+
 </section>
 
 <hr class="guide-separator"/>
