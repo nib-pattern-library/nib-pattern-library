@@ -117,8 +117,8 @@ IF EXIST "%DEPLOYMENT_TEMP%\package.json" (
     call :ExecuteCmd rimraf .\build
   )
 
-  SET CLEAN_NODE_MODULES=1
-  SET CLEAN_NPM_CACHE=1
+  SET CLEAN_NODE_MODULES="1"
+  SET CLEAN_NPM_CACHE="1"
   
   echo Temp dir is %DEPLOYMENT_TEMP%
   IF /I "%CLEAN_NODE_MODULES%" EQU "1" (
