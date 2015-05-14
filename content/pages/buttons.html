@@ -141,6 +141,36 @@ template:   page.html
         
 <hr class="guide-separator"/>
 
+<!-- ====== BUTTON GROUP ====== !-->
+        
+<section class="guide-component" id="button group">
+    <h2 class="guide-component__title v2-title v2-title--2">Button Group</h2>
+    
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+                'Use for multiple, equally weighted options',
+                'Use when more than a link list is required',
+                'Use when initiating immediate action on button press'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+                'Don\'t use in conjunction with tertiary buttons'
+            ]}) %>
+
+        </div>
+    </div>
+
+    <%- partial('example', {source: ''}) %>
+    
+</section>
+        
+<hr class="guide-separator"/>
+
 <!-- ====== ICONOGRAPHY ====== !-->
         
 <section class="guide-component" id="Iconography">
@@ -150,7 +180,7 @@ template:   page.html
         <div class="rg-Unit rg-6of12 rg-pr2at12">
 
             <%- partial('do-list', {items: [
-                'Use to indicate an action such as a drop down or fucntion of a button e.g. <a href="nib.com.au/oshc" class="v2-link v2-link--green">OSHC Page</a>',
+                'Use to indicate an action such as a drop down or function of a button e.g. <a href="nib.com.au/oshc" class="v2-link v2-link--green">OSHC Page</a>',
                 'The icon color should match the color of the text on button'
             ]}) %>
 
