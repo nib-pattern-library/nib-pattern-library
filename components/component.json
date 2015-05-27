@@ -8,7 +8,7 @@
   "dependencies": {
     "nib-health-funds/back-to-top": "^0.1.6",
     "nib-styles/responsive-grid": "^0.4.2",
-    "nib-styles/v2-typography": "^0.4.0",
+    "nib-styles/v2-typography": "^0.4.1",
     "nib-styles/v2-buttons": "^2.0.2",
     "nib-styles/v2-icons": "^2.1.0",
     "nib-styles/v2-alerts": "^1.0.1",

@@ -4,7 +4,7 @@ title:      Iconography
 template:   page.html
 ---
 
-<p>Icons are used accross our site to help illustrate a concept, visually break up content and assist in navigation. </p>
+<p>Icons are used across our site to help illustrate a concept, visually break up content and assist in navigation. </p>
 
 <ul>
     <li>Icons can be in colour</li>
@@ -161,7 +161,27 @@ template:   page.html
     }) %>
 
     <%- partial('icon', {
-        glyph:  'fax',
+        glyph:  'single',
+        aliases: ['person']
+    }) %>
+
+    <%- partial('icon', {
+        glyph:  'couple',
+        aliases: ['']
+    }) %>
+
+    <%- partial('icon', {
+        glyph:  'family',
+        aliases: ['']
+    }) %>
+
+    <%- partial('icon', {
+        glyph:  'single-parent-family',
+        aliases: ['']
+    }) %>
+
+    <%- partial('icon', {
+        glyph:  'over-55',
         aliases: ['']
     }) %>
 
