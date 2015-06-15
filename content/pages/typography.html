@@ -171,7 +171,7 @@ template:   page.html
 </section>
 
 <hr class="guide-separator"/>
-<!-- ====== Body Copy ====== !-->
+<!-- ====== Lists ====== !-->
 
 <section class="guide-component" id="list-copy">
     <h2 class="guide-component__title v2-title v2-title--2">List (in copy)</h2>
@@ -195,6 +195,43 @@ template:   page.html
     </div>
 
     <%- partial('example', {source: '<ul class="v2-list v2-list--copy"><li class="v2-list__item">We\'ll recognise any waiting</li><li>Periods already served with</li><li>Your current fund</li></ul>'}) %>
+
+</section>
+
+<hr class="guide-separator"/>
+<!-- ====== Icon Lists ====== !-->
+
+<section class="guide-component" id="icon-list">
+    <h2 class="guide-component__title v2-title v2-title--2">Icon List</h2>
+
+    <div class="rg-Grid">
+        <div class="rg-Unit rg-6of12 rg-pr2at12">
+
+            <%- partial('do-list', {items: [
+            'Aim to keep list item line lengths short',
+            'Icon size will correspond with text size',
+            'Spacing is proportional to font size',
+            'Support for tick or chevron lists'
+            ]}) %>
+
+        </div>
+        <div class="rg-Unit rg-6of12 rg-pl2at12">
+
+            <%- partial('dont-list', {items: [
+            'Avoid including more than 5 items in the one list'
+            ]}) %>
+
+        </div>
+    </div>
+
+    <h3 class="v2-title v2-title--3">Modifiers</h3>
+    <ul>
+        <li><code>v2-list--tick</code></li>
+        <li><code>v2-list--chevron</code></li>
+    </ul>
+
+    <%- partial('example', {source: '<ul class="v2-list v2-list--icon v2-list--tick"><li class="v2-list__item">We\'ll recognise any waiting</li><li class="v2-list__item">Periods already served with</li><li class="v2-list__item">Your current fund</li></ul>'}) %>
+    <%- partial('example', {source: '<ul class="v2-list v2-list--icon v2-list--chevron"><li class="v2-list__item">We\'ll recognise any waiting</li><li class="v2-list__item">Periods already served with</li><li class="v2-list__item">Your current fund</li></ul>'}) %>
 
 </section>
 
