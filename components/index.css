@@ -367,7 +367,16 @@ button:active, a:active{
 .v2-link--tertiary:active{
   border-bottom-width:1px;
 }
-
+.v2-link--icon{
+  color: hsl(210, 29%, 29%);
+  transition:color .25s;
+}
+.v2-link--icon:hover{
+  color: hsl(210, 29%, 24%);
+}
+.v2-link--icon:active{
+  color: hsl(210, 29%, 19%);
+}
 
 /*===== end style for states page =====*/
 
