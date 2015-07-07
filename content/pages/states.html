@@ -1,0 +1,170 @@
+---
+slug:       states
+title:      States
+template:   page.html
+---
+
+<h3 class="v2-title v2-title--4">
+    This page is intended to provide general principles, rules and examples for states of elements on the nib site.   
+</h3>
+<p>
+    Types of state:
+<ul>
+    <li>Normal</li>
+    <li>Hover</li>
+    <li>Focus</li>  
+    <li>Active</li> 
+    <li>Disabled</li>
+    <li>Loading</li>
+</ul>
+</p>    
+
+<p>States aim to:
+<ul>
+    <li>Make a system easier to use</li>
+    <li>Make a system more learnable</li>
+    <li>Build confidence in the user, which contributes to success</li>
+    <li>Reduce hesitation and errors</li>
+</ul>
+</p>
+
+
+<!-- ====== BUTTONS ====== !-->
+        
+<section class="guide-component" id="Buttons">
+    <h2 class="guide-component__title v2-title v2-title--2">Examples</h2>
+    <p>
+    These rules also apply to elements which behave like buttons such as clickable panels and cards.
+    </p>
+    <table>
+        <tr>
+            <th>
+                Element
+            </th>
+            <th>
+                Example
+            </th>
+            <th>
+                Notes
+            </th>
+        </tr>
+        <tr>
+            <td>
+            Primary button
+            </td>
+            <td>
+                <button class="v2-button v2-button--primary">Perform the primary action</button>
+            </td>
+            <td>
+                For hover, the lightness value (HSL) is decreased by 10% of the normal L value. <br/>
+                For active it is decreased by a further 10% of the original lightness value.
+                This applies to any button, panel or card with a normal lightness value of up to 50%
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Primary button (disabled)
+            </td>
+            <td>
+            <button class="v2-button v2-button--primary v2-button--primary-disabled">Disable the primary action</button>
+            </td>
+            <td>
+                Button text is at 30% opacity. An "auto" cursor has been used rather than a "not-allowed" as the not allowed cursor has the potential to confuse users who have just clicked the button.
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Primary button (loading)
+            </td>
+            <td>
+                <button class="v2-button v2-button--primary v2-button--icon-on-right v2-button--primary-disabled"><i class="v2-icon v2-icon--smallest v2-icon--spinner v2-icon--spin v2-icon--offset-descenders" style="margin-left:0; color:hsl(0,0%,100%);"></i></button>
+            </td>
+            <td>
+                Usually will be used when loading the next page in a prcoess or saving data. A width transition animation should be used. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Secondary button
+            </td>
+            <td>
+                <button class="v2-button v2-button--secondary-light-grey">Perform the Secondary action</button>
+            </td>
+            <td>
+                The white and light-grey hover states a decreased by a smaller percentage as they are starting from a much higher lightness value.
+                For hover, the lightness value (HSL) is decreased by 5%. <br/>
+                For active it is decreased by a further 5%.
+                This applies to any button, panel or card with a normal lightness value of above 50%
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tertiary button
+            </td>
+            <td>
+                <button class="v2-button v2-button--tertiary">Perform the tertiary action</button>
+            </td>
+            <td>
+                See above   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tertiary button (disabled)
+            </td>
+            <td>
+                <button class="v2-button v2-button--tertiary v2-button--tertiary-disabled">Disable the tertiary action</button>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Primary link
+            </td>
+            <td>
+                <a href="" class="v2-link--primary">This is a primary link</button>
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tertiary link
+            </td>
+            <td>
+                <a href="" class="v2-link--tertiary">This is a tertiary link</button>
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tertiary link
+            </td>
+            <td>
+                <a href="" class="v2-link--icon"><i class="v2-icon v2-icon--info-circle-inverse"></i></button>
+            </td>
+            <td>
+                Due to clickable icons usually being small the hover and active states should always use a decreased L value of 5%. (as with light grey and white buttons - see above)
+                NOTE to designers and FEDs: Recommend looking at increasing the size on hover, also.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tertiary link (disabled)
+            </td>
+            <td>
+                <a class="v2-button--tertiary-disabled"><i class="v2-icon v2-icon--info-circle-inverse"></i></button>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+    
+</section>
+        
+<hr class="guide-separator"/>
+
