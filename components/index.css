@@ -269,6 +269,108 @@ body {
   transition: all .3s ease-in-out;
 }
 
+
+/*===== start style for states page =====*/
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  padding:10px;  
+  border:1px solid hsl(0,0%,95%);
+}
+
+button:focus, a:focus{
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset:1px;
+  outline-color: hsl(180,100%,45%);
+}
+
+button:active, a:active{
+  outline: none;
+}
+
+.v2-button--primary:active{
+  background-color: hsl(42, 100%, 40%);
+}
+.v2-button--secondary-light-grey{
+  background-color: hsl(0,0%,95%);
+}
+.v2-button--secondary-light-grey:hover{
+  background-color: hsl(0,0%,90%);
+}
+.v2-button--secondary-light-grey:active{
+  background-color: hsl(0,0%,85%);
+}
+
+
+.v2-button--tertiary{
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.v2-button--tertiary:hover{
+  background-color: hsl(0,0%,95%);
+}
+.v2-button--tertiary:active{
+  background-color: hsl(0,0%,90%);
+}
+
+.v2-link--primary{
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  border-bottom-style:solid;
+  border-bottom-color: hsl(210, 29%, 29%);
+  border-bottom-width: 1px; 
+  cursor: pointer;
+}
+.v2-link--primary:hover{
+  border-bottom-width:2px;
+}
+.v2-link--primary:active{
+  border-bottom-width:1px;
+}
+
+.v2-button--primary-disabled{
+  color:hsla(0,0%,100%,.3);
+}
+.v2-button--primary-disabled:hover{
+  background-color: hsl(42,100%,50%);
+  cursor: auto;
+}
+.v2-button--tertiary-disabled{
+  color:hsla(0,0%,27%,.3);
+  text-transform: uppercase;
+}
+.v2-button--tertiary-disabled:hover{
+  background-color: transparent;
+  cursor: auto;
+}
+
+.v2-link--tertiary{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: inherit;
+  text-decoration: none;
+  border-bottom-style:solid;
+  border-bottom-color: transparent;
+  border-bottom-width: 2px; 
+  cursor: pointer;
+  transition:border-bottom-color .25s;
+}
+.v2-link--tertiary:hover{
+  border-bottom-color: hsl(210, 29%, 29%); 
+}
+.v2-link--tertiary:active{
+  border-bottom-width:1px;
+}
+
+
+/*===== end style for states page =====*/
+
 /* === Guide footer === */
 
 .guide-footer {
