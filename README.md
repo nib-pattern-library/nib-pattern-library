@@ -25,9 +25,11 @@ Required software:
 1. Install node modules - `npm install`
 1. Authorise component to access the Github API by creating a [token](https://github.com/settings/tokens/new) and adding it to your `~/.netrc` file.
 
+```
     machine api.github.com
       login          <token> 
       password       x-oauth-basic
+```
 
 ## Building
 
