@@ -1,0 +1,5 @@
+{
+  "name": "nib-pattern-library",
+  "root": "./dist",
+  "clean_urls": true
+}
