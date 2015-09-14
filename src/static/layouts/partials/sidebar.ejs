@@ -6,10 +6,13 @@
 
             <a href="<%= rootPath %><%= page.link %>" class="<%- currentPageSlug === page.slug ? 'is-current' : '' %>"><%= page.title %></a>
 
-            <% if (currentPageSlug === page.slug) { %>
-            <!-- within page navigation -->
-            <div class="js-in-page-nav"></div>
-            <% } %>
+            <div class="guide-navigation guide-navigation--secondary">
+                <ul class="list list--vertical">
+                    <% page.headings.forEach(function(heading) { %>
+                    <li><a href="#<%= heading.id; %>"><%= heading.text; %></a></li>
+                    <% }) %>
+                </ul>
+            </div>
 
         </li>
         <% }) %>

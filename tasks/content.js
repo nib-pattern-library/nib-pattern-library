@@ -10,6 +10,7 @@ var rootPath    = require('metalsmith-rootpath');
 var filepath    = require('metalsmith-filepath');
 var rename      = require('metalsmith-rename');
 var collections = require('metalsmith-collections');
+var headings    = require('metalsmith-headings');
 
 //TODO: metalsmith-git-rev
 //TODO: metalsmith-headings for anchors
@@ -51,6 +52,7 @@ module.exports = function(cfg) {
       .use(rootPath())
       .use(filepath({absolute: false}))
       .use(templates({engine: 'ejs', partials: './templates', pattern: '**/*.html', partial: partial}))
+      .use(headings('h2'))
       .use(layouts({engine: 'ejs', directory: './layouts', default: 'index.ejs', pattern: '**/*.html'}))
       .build(done)
     ;
