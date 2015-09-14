@@ -67,7 +67,6 @@ module.exports = function(cfg) {
       .clean(false)
       .source(src)
       .destination(dest)
-      .metadata({version: 'foo'})
       .use(rename([[/\.ejs$/, '.html']]))
       .use(sluggify)
       .use(versionify)
