@@ -36,7 +36,6 @@
     "metalsmith-layouts": "^1.4.0",
     "metalsmith-rename": "^1.0.0",
     "metalsmith-rootpath": "jameslnewell/metalsmith-rootpath",
-    "metalsmith-templates": "^0.7.0",
     "mkdirp": "^0.5.0",
     "mocha": "^2.2.5",
     "npm-cmd": "^0.2.0",
