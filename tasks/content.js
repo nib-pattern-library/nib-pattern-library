@@ -86,7 +86,7 @@ module.exports = function(cfg) {
    * Watch content
    *==================================*/
 
-  gulp.task('packages.watch', function() {
+  gulp.task('content.watch', function() {
     gulp.watch(CONTENT_SRC_GLOB, ['content.build']);
   });
 

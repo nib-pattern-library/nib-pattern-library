@@ -9,8 +9,10 @@
             <div class="guide-navigation guide-navigation--secondary">
                 <ul class="list list--vertical">
                     <% page.headings.forEach(function(heading) { %>
-                    <li><a href="#<%= heading.id; %>"><%= heading.text; %></a></li>
-                    <% }) %>
+                      <% if (heading.id) { %>
+                      <li><a href="<%= rootPath %><%= page.link %>#<%= heading.id; %>"><%= heading.text; %></a></li>
+                      <% } %>
+                    <% }); %>
                 </ul>
             </div>
 
