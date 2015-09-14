@@ -4,16 +4,37 @@ var gulp        = require('gulp');
 var minHTML     = require('gulp-htmlmin');
 var ejs         = require('ejs');
 var metalsmith  = require('metalsmith');
+var rename      = require('metalsmith-rename');
 var layouts     = require('metalsmith-layouts');
 var templates   = require('metalsmith-in-place');
 var rootPath    = require('metalsmith-rootpath');
 var filepath    = require('metalsmith-filepath');
-var rename      = require('metalsmith-rename');
 var collections = require('metalsmith-collections');
 var headings    = require('metalsmith-headings');
 
 //TODO: metalsmith-git-rev
-//TODO: metalsmith-headings for anchors
+function versionify(files, metalsmith, next) {
+
+  //figure out the git SHA
+  require('git-rev').short(function(version) {
+
+    for (var path in files) {
+      files[path].version = version;
+    }
+
+    next();
+  });
+
+}
+
+function sluggify(files, metalsmith, next) {
+  for (var path in files) {
+    if (/\.html$/.test(path)) {
+      files[path].slug = files[path].title.toLowerCase().replace(/[^a-z0-9]/, '-').replace(/--/, '-');
+    }
+  }
+  next();
+}
 
 module.exports = function(cfg) {
 
@@ -48,6 +69,8 @@ module.exports = function(cfg) {
       .destination(dest)
       .metadata({version: 'foo'})
       .use(rename([[/\.ejs$/, '.html']]))
+      .use(sluggify)
+      .use(versionify)
       .use(collections({pages: {pattern: 'pages/*.html', sortBy: 'title'}}))
       .use(rootPath())
       .use(filepath({absolute: false}))

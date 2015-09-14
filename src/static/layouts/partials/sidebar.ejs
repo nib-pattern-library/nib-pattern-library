@@ -4,7 +4,7 @@
         <% collections.pages.forEach(function(page) { %>
         <li>
 
-            <a href="<%= rootPath %><%= page.link %>" class="<%- currentPageSlug === page.slug ? 'is-current' : '' %>"><%= page.title %></a>
+            <a href="<%= rootPath %><%= page.link %>" class="<%- slug === page.slug ? 'is-current' : '' %>"><%= page.title %></a>
 
             <div class="guide-navigation guide-navigation--secondary">
                 <ul class="list list--vertical">

@@ -8,6 +8,7 @@
     "del": "^2.0.1",
     "ejs": "^2.3.4",
     "finder-on-steroids": "^0.3.2",
+    "git-rev": "^0.2.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-htmlmin": "^1.1.3",
