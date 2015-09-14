@@ -1,7 +1,9 @@
-var gulp        = require('gulp');
+var fs          = require('fs');
 var path        = require('path');
-var metalsmith  = require('metalsmith');
+var gulp        = require('gulp');
 var minHTML     = require('gulp-htmlmin');
+var ejs         = require('ejs');
+var metalsmith  = require('metalsmith');
 var layouts     = require('metalsmith-layouts');
 var templates   = require('metalsmith-in-place');
 var rootPath    = require('metalsmith-rootpath');
@@ -9,7 +11,6 @@ var filepath    = require('metalsmith-filepath');
 var rename      = require('metalsmith-rename');
 var collections = require('metalsmith-collections');
 
-//TODO: metalsmith-in-place locals
 //TODO: metalsmith-git-rev
 //TODO: metalsmith-headings for anchors
 
@@ -17,6 +18,17 @@ module.exports = function(cfg) {
 
   var CONTENT_SRC_DIR = cfg.srcdir+'/static';
   var CONTENT_SRC_GLOB = cfg.srcdir+'/static/**/*';
+
+  /**
+   * Render a partial template
+   * @param   {string} path
+   * @param   {Object} data
+   * @returns {string}
+   */
+  function partial(path, data) {
+    data.partial = partial;
+    return ejs.render(fs.readFileSync(CONTENT_SRC_DIR+'/templates/partials/'+path+'.ejs').toString(), data);
+  }
 
   /*==================================
    * Build content
@@ -38,8 +50,8 @@ module.exports = function(cfg) {
       .use(collections({pages: {pattern: 'pages/*.html', sortBy: 'title'}}))
       .use(rootPath())
       .use(filepath({absolute: false}))
-      //.use(templates({engine: 'ejs', directory: 'templates', pattern: '**/*.html'}))
-      .use(layouts({engine: 'ejs', directory: 'layouts', default: 'index.ejs', pattern: '**/*.html'}))
+      .use(templates({engine: 'ejs', partials: './templates', pattern: '**/*.html', partial: partial}))
+      .use(layouts({engine: 'ejs', directory: './layouts', default: 'index.ejs', pattern: '**/*.html'}))
       .build(done)
     ;
 
