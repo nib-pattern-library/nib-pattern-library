@@ -75,6 +75,17 @@ body {
   padding-bottom: 180px;
 }
 
+
+/* --- nib-pattern-library: menu item */
+
+.npl-menu-item__anchors {
+  display: none;
+}
+
+.npm-menu-item--active .npl-menu-item__anchors {
+  display: block;
+}
+
 .guide-content {
   padding-left: 440px;
   padding-right:40px;
