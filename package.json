@@ -50,6 +50,6 @@
   },
   "scripts": {
     "build": "gulp all",
-    "watch": "gulp watch",
+    "watch": "gulp watch"
   }
 }
