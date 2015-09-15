@@ -8,7 +8,7 @@ var rename      = require('metalsmith-rename');
 var layouts     = require('metalsmith-layouts');
 var templates   = require('metalsmith-in-place');
 var rootPath    = require('metalsmith-rootpath');
-var filepath    = require('metalsmith-filepath');
+var filePath    = require('metalsmith-filepath');
 var collections = require('metalsmith-collections');
 var headings    = require('metalsmith-headings');
 
@@ -25,15 +25,6 @@ function versionify(files, metalsmith, next) {
     next();
   });
 
-}
-
-function sluggify(files, metalsmith, next) {
-  for (var path in files) {
-    if (/\.html$/.test(path)) {
-      files[path].slug = files[path].title.toLowerCase().replace(/[^a-z0-9]/, '-').replace(/--/, '-');
-    }
-  }
-  next();
 }
 
 module.exports = function(cfg) {
@@ -68,11 +59,10 @@ module.exports = function(cfg) {
       .source(src)
       .destination(dest)
       .use(rename([[/\.ejs$/, '.html']]))
-      .use(sluggify)
       .use(versionify)
       .use(collections({pages: {pattern: 'pages/*.html', sortBy: 'title'}}))
       .use(rootPath())
-      .use(filepath({absolute: false}))
+      .use(filePath({absolute: false}))
       .use(templates({engine: 'ejs', partials: './templates', pattern: '**/*.html', partial: partial}))
       .use(headings('h2'))
       .use(layouts({engine: 'ejs', directory: './layouts', default: 'index.ejs', pattern: '**/*.html'}))

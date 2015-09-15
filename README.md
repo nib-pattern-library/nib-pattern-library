@@ -54,10 +54,10 @@ Comming soon...
 
 ## Directory structure
 
-    dist/             #all the generated files live here
+    dist/             #all the generated files live here - any changes you make here will be lost!!!
       index.html        #the home page
 
-    src/
+    src/              #all the source files live here
 
       component/      #all the style and script files live here
         index.js        #the script entry file where you should write/require your code

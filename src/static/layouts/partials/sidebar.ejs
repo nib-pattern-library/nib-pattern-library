@@ -2,7 +2,7 @@
     <h3 class="guide-header">pattern library</h3>
     <ul class="npl-menu">
         <% collections.pages.forEach(function(page) { %>
-        <li class="npl-menu__item npl-menu-item <%- slug === page.slug ? 'npm-menu-item--active' : '' %>">
+        <li class="npl-menu__item npl-menu-item <%- link === page.link ? 'npm-menu-item--active' : '' %>">
 
             <a class="npl-menu-item__link" href="<%= rootPath %><%= page.link %>"><%= page.title %></a>
 
