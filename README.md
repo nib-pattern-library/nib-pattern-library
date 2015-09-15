@@ -1,86 +1,86 @@
 # nib-pattern-library
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+The `nib-pattern-library` can be viewed online here:
+- [production](http://production.nib-pattern-library.divshot.io)
+- [staging](http://staging.nib-pattern-library.divshot.io)
+- [development](http://development.nib-pattern-library.divshot.io)
+
+## Authoring
+
+The following programs are required for authoring the `nib-pattern-library`:
+
+- [git](https://git-scm.com/downloads) (the Github app might be easier to use if you're not familier with using a command line)
+- [nodejs](https://nodejs.org/en/download/)
+- An editor e.g. [Atom](https://atom.io/)
+- A browser e.g. [Chrome](http://www.google.com/chrome/)
+
+To submit changes to the `nib-pattern-library` you'll need a `Github` account and have [setup a SSH key](https://help.github.com/articles/generating-ssh-keys/).
+
+### Installation
+
+Enter the following commands in a `Terminal` window on `OS X` or a `Command Prompt` window on `Windows`:
+
+2. `git clone git@github.com:nib-pattern-library/nib-pattern-library.git`
+3. `cd nib-pattern-library`
+4. `npm install`
+5. `npm run build`
+
+Open `./dist/index.html` to view the `nib-pattern-library`.
+
+<small>
+**Note**: you only ever need to perform this step once.
+</small>
+
+### Building
+
+When you make a change to the `nib-pattern-library` you'll need to build it in order to view it:
+
+1. `npm run build`
+
+**Pro tip:** use `npm run watch` to automatically run the build step whenever you change a file.
+
+### Publishing
+
+When you're finished making changes to the `nib-pattern-library` and want to publish them for others to see:
+
+1. `git add -A`
+2. `git commit -am "<insert a message describing your changes here>"`
+3. `git pull` - check if anyone else has made changes and merge them with your changes
+4. `git push`
+
+### Deploying
+
+Comming soon...
 
 ## Directory structure
 
     dist/             #all the generated files live here
-      bundled.css       #the bundled styles
-      bundled.js        #the bundled scripts
-      mocha.json        #the test output for consumption by Bamboo
-      coverage/         #the full test coverage report
-      
+      index.html        #the home page
+
     src/
-      component/      #all the source files live here
+
+      component/      #all the style and script files live here
         index.js        #the script entry file where you should write/require your code
         index.scss      #the style entry file where you should write/require your code
         package.json    #the dependency information for your styles, scripts and tests
         test/
-         index.js     
-         
-    tasks/            #all the gulp tasks live here
-    
-    gulpfile.js       #the gulp entry file
-    package.json      #the dependency information for the gulp tasks
+         index.js  
 
-## Build tasks
+      static/
 
-#### all
+        content/        #the site content
+          index.ejs       #the home page
+          pages/          #the content pages
+            buttons.ejs
+            ...
 
-Run all the things!
+        layouts/        #the site layouts
+          index.ejs
+          partials/
+            header.ejs
+            ...
 
-    gulp all
-    
-You'll probably want to use this whenever you pull to get any new dependencies, and before you push to make sure you've
-recorded all your dependencies, formatted your code appropriately and haven't caused any regressions.
-
-#### default
-
-Bundles the styles and scripts. 
-
-    gulp
-
-If you're not using the `watch` task you'll probably want to use this task whenever you change the code.
-
-#### watch
-
-Listens for changes to your style, script and package.json files and bundles/installs them when they change.
-
-    gulp watch
-
-You'll want to use this whenever you're making changes to the code.
-
-#### clean
-
-Deletes all the generated files from the `./dist` directory.
-
-    gulp clean
-    
-Run this task when you want to re-bundle styles and scripts from a clean slate.
-
-#### install
-
-Install all the dependencies for your styles and scripts.
-
-    gulp install
-    
-You'll probably want to run this after you or someone else makes changes the package.json file.
-
-#### test
-
-    gulp test
-
-Run all the tests in PhantomJS.
-
-#### debug
-
-    gulp debug
-
-Run a test server so you can debug the tests in the browser.
-
-#### optimise
-
-    gulp optimise
-
-Optimise all the styles, scripts and assets.
-    
+        templates/      #the site templates
+          partials/
+            do-list.ejs
+            ...
