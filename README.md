@@ -22,7 +22,10 @@ Enter the following commands in a `Terminal` window on `OS X` or a `Command Prom
 
 2. `git clone git@github.com:nib-pattern-library/nib-pattern-library.git`
 3. `cd nib-pattern-library`
+99. Switch to the `Developer` wifi - <small>required internally because the proxy sucks</small>
 4. `npm install`
+99. Switch to the `Corp` wifi - <small>required because our packages are only accessible internally</small>
+99. `npm config set registry http://npm:8080` - <small>required because our packages are only accessible internally</small>
 5. `npm run build`
 
 Open `./dist/index.html` to view the `nib-pattern-library`.
