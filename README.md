@@ -11,6 +11,7 @@ The following programs are required for authoring the `nib-pattern-library`:
 
 - [git](https://git-scm.com/downloads) (the Github app might be easier to use if you're not familier with using a command line)
 - [nodejs](https://nodejs.org/en/download/)
+- xcode (for macs) - download from the app store
 - An editor e.g. [Atom](https://atom.io/)
 - A browser e.g. [Chrome](http://www.google.com/chrome/)
 
