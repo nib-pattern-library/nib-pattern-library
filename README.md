@@ -64,28 +64,26 @@ Comming soon...
 
     src/              #all the source files live here
 
-      component/      #all the style and script files live here
-        index.js        #the script entry file where you should write/require your code
-        index.scss      #the style entry file where you should write/require your code
-        package.json    #the dependency information for your styles, scripts and tests
+      assets/           #all the style and script files live here
+          index.js        #the script entry file where you should write/require your code
+          index.scss      #the style entry file where you should write/require your code
+          package.json    #the dependency information for your styles, scripts and tests
         test/
          index.js  
 
-      static/
+      content/          #the site content
+        index.ejs         #the home page
+        pages/            #the content pages
+          buttons.ejs
+          ...
 
-        content/        #the site content
-          index.ejs       #the home page
-          pages/          #the content pages
-            buttons.ejs
-            ...
+      layouts/          #the site layouts
+        index.ejs
+        partials/
+          header.ejs
+          ...
 
-        layouts/        #the site layouts
-          index.ejs
-          partials/
-            header.ejs
-            ...
-
-        templates/      #the site templates
-          partials/
-            do-list.ejs
-            ...
+      templates/        #the site templates
+        partials/
+          do-list.ejs
+          ...

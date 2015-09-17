@@ -29,8 +29,8 @@ function versionify(files, metalsmith, next) {
 
 module.exports = function(cfg) {
 
-  var CONTENT_SRC_DIR = cfg.srcdir+'/static';
-  var CONTENT_SRC_GLOB = cfg.srcdir+'/static/**/*';
+  var CONTENT_SRC_DIR = cfg.srcdir+'';
+  var CONTENT_SRC_GLOB = [cfg.srcdir+'/content/**/*', cfg.srcdir+'/layouts/**/*', cfg.srcdir+'/templates/**/*'];
 
   /**
    * Render a partial template
