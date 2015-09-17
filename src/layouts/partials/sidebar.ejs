@@ -1,25 +1,37 @@
-<article class="guide-navigation guide-navigation--primary">
-    <h3 class="guide-header">pattern library</h3>
-    <ul class="npl-menu">
-        <% collections.pages.forEach(function(page) { %>
-        <li class="npl-menu__item npl-menu-item <%- link === page.link ? 'npm-menu-item--active' : '' %>">
+<section class="npl-sidebar">
 
-            <a class="npl-menu-item__link" href="<%= rootPath %><%= page.link %>"><%= page.title %></a>
+    <header class="npl-sidebar__header npl-sidebar-header">
+        nib Pattern Library
+    </header>
 
-            <div class="npl-menu-item__anchors guide-navigation guide-navigation--secondary">
-                <ul class="list list--vertical">
-                    <% page.headings.forEach(function(heading) { %>
-                      <% if (heading.id) { %>
-                      <li><a href="<%= rootPath %><%= page.link %>#<%= heading.id; %>"><%= heading.text; %></a></li>
-                      <% } %>
-                    <% }); %>
-                </ul>
-            </div>
+    <div class="npl-sidebar__menu">
+        <ul class="npl-sidebar-menu npl-sidebar-menu--primary">
+            <% collections.pages.forEach(function(page) { %>
+            <li class="npl-sidebar-menu__item npl-sidebar-menu-item <%- link === page.link ? 'npl-sidebar-menu-item--active' : '' %>">
 
-        </li>
-        <% }) %>
-    </ul>
-    <h4 class="guide-tagline">Better business, by design</strong></h3>
+                <a class="npl-sidebar-menu-item__link" href="<%= rootPath %><%= page.link %>"><%= page.title %></a>
 
+                <div class="npl-sidebar-menu-item__anchors">
+                    <ul class="npl-sidebar-menu npl-sidebar-menu--secondary">
 
-</article>
+                        <% page.headings.forEach(function(heading) { %>
+                          <% if (heading.id) { %>
+                          <li class="npl-sidebar-menu-item npl-sidebar-menu-item--secondary">
+                            <a class="npl-sidebar-menu-item__link" href="<%= rootPath %><%= page.link %>#<%= heading.id; %>"><%= heading.text; %></a>
+                          </li>
+                          <% } %>
+                        <% }); %>
+
+                    </ul>
+                </div>
+
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+
+    <footer class="npl-sidebar__footer npl-sidebar-footer">
+      Better business, by design
+    </footer>
+
+</section>

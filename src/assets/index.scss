@@ -183,51 +183,6 @@ body {
   margin-right:15px;
 }
 
-
-/* === Navigation == */
-.guide-navigation {
-  background-color: rgb(88,57,101);
-  color: #fff;
-}
-
-.guide-navigation h4 {
-  text-align: center;
-}
-
-.guide-navigation ul li {
-  list-style-image: none;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-.guide-navigation ul li a {
-  text-decoration: none;
-  padding: 10px 15px 10px 0;
-  display: inline-block;
-  color: rgba(255,255,255, 0.8);
-  transition: all .3s ease-in-out;
-}
-
-.guide-navigation ul li a:hover {
-  color: rgba(255,255,255, 1);
-  transition: all .3s ease-in-out;
-}
-
-.guide-navigation--secondary ul {
-  padding-left: 20px;
-  font-size: .8em;
-  line-height: 1em;
-}
-
-.guide-navigation--secondary ul li a {
-  color: rgba(255,255,255,0.5)
-}
-
-.guide-navigation ul li a:hover {
-  transition: all .3s ease-in-out;
-}
-
-
 /*===== start style for states page =====*/
 
 table{
@@ -391,5 +346,6 @@ button:active, a:active{
   display: none;
 }
 
-
-
+.u-clickable {
+  cursor: pointer;
+}

@@ -1,66 +1,103 @@
 @import "./offcanvas";
 
-.guide-header {
+/* === LAYOUT === */
+
+.npl-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.npl-sidebar__menu {
+  flex: 1;
+  padding: 15px 0 15px 40px;
+  background-color: rgb(88,57,101);
+}
+
+@include breakpoint('xl') {
+
+  .npl-sidebar {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+
+}
+
+.npl-sidebar-header {
   font-family: roboto;
-  height: 80px;
   margin: 0;
-  padding: 0 40px;
+  padding: 15px 40px;
   color: #fff;
   background: #EA3656;
-  line-height: 80px;
+  line-height: 30px;
   font-weight: 100;
   font-size: 1.25em;
-  min-width: 320px;
   text-transform: uppercase;
   letter-spacing: .5em;
 }
 
-.guide-header strong {
+/* === MENU === */
+
+.npl-sidebar-menu {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.npl-sidebar-menu--secondary {
+  padding-left: 20px;
+  font-size: .8em;
+  line-height: 1em;
+}
+
+
+/* === MENU ITEM === */
+
+.npl-sidebar-menu-item {
+  list-style-type: none;
   text-transform: uppercase;
-  font-weight: 100;
-  opacity: .7;
 }
 
-.guide-navigation--primary > ul {
-  padding-bottom: 180px;
+.npl-sidebar-menu-item__link {
+  text-decoration: none;
+  padding: 10px 15px 10px 0;
+  display: inline-block;
+  color: rgba(255,255,255,.8);
+  transition: all .3s ease-in-out;
 }
 
-/* --- nib-pattern-library: menu item */
+.npl-sidebar-menu-item--secondary .npl-sidebar-menu-item__link {
+  color: rgba(255,255,255,.5);
+}
 
-.npl-menu-item__anchors {
+.npl-sidebar-menu-item__link:hover {
+  color: hsl(0, 100%, 100%);
+  transition: all .3s ease-in-out;
+}
+
+.npl-sidebar-menu-item__anchors {
   display: none;
 }
 
-.npm-menu-item--active .npl-menu-item__anchors {
+.npl-sidebar-menu-item--active .npl-sidebar-menu-item__anchors {
   display: block;
 }
 
-.guide-tagline {
+/* === FOOTER === */
+
+.npl-sidebar-footer {
   font-family: roboto;
-  height: 80px;
   margin: 0;
-  padding: 0 40px;
+  padding: 15px 40px;
   color: #fff;
   background: #EA3656;
-  line-height: 80px;
+  line-height: 30px;
   font-weight: 100;
   font-size: 1em;
   letter-spacing: .23em;
   bottom: 0;
   color: rgba(255,255,255, 0.5);
   text-transform: uppercase;
-  min-width: 320px;
-}
-
-@include breakpoint('xl') {
-
-  .guide-navigation--primary {
-    width: 280px;
-    float: left;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    overflow-x: hidden;
-  }
-
 }
