@@ -1,9 +1,21 @@
 <% include partials/header %>
-<% include partials/sidebar %>
 
-<div class="guide-content rg-Page v2-article">
-  <h1 class="v2-title v2-title--1"><%= title %></h1>
-  <%- contents %>
+<div class="offcanvas js-offcanvas">
+
+  <div class="offcanvas__content">
+    <% include partials/sidebar %>
+  </div>
+
+  <div class="offcanvas__canvas js-offcanvas-canvas">
+
+    <div class="npl-container v2-article" g-xs="px2">
+      <a class="js-offcanvas-trigger" g-xl="display:none"><i class="v2-icon v2-icon--menu"></i></a>
+      <h1 class="v2-title v2-title--1"><%= title %></h1>
+      <%- contents %>
+    </div>
+
+    <% include partials/footer %>
+
+  </div>
+
 </div>
-
-<% include partials/footer %>

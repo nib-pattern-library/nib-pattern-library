@@ -4,6 +4,13 @@
 @import "@nib-styles/v2-buttons";
 @import "@nib-styles/v2-typography";
 
+
+@import "@nib-styles/sass-breakpoints";
+@import "@nib-styles/sass-grid/compiled";
+@import "@nib-styles/sass-spacing/compiled";
+
+@import "./lib/navigation";
+
 /* ====== START: Guide specific styles ====== */
 
 body {
@@ -15,80 +22,15 @@ body {
   color:rgb(52, 73, 94);
 }
 
+.npl-container {
+  max-width: 60em;
+  margin: auto;
+  overflow: hidden;
+}
+
 .guide-component {
   margin-top:60px;
   padding-bottom:60px;
-}
-
-.guide-header {
-  font-family: roboto;
-  height: 80px;
-  margin: 0;
-  padding: 0 40px;
-  color: #fff;
-  background: #EA3656;
-  line-height: 80px;
-  font-weight: 100;
-  font-size: 1.25em;
-  min-width: 320px;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-}
-
-.guide-tagline {
-  font-family: roboto;
-  height: 80px;
-  margin: 0;
-  padding: 0 40px;
-  color: #fff;
-  background: #EA3656;
-  line-height: 80px;
-  font-weight: 100;
-  font-size: 1em;
-  letter-spacing: .23em;
-  position: fixed;
-  bottom: 0;
-  color: rgba(255,255,255, 0.5);
-  text-transform: uppercase;
-  min-width: 320px;
-}
-
-.guide-header strong {
-  text-transform: uppercase;
-  font-weight: 100;
-  opacity: .7;
-}
-
-
-
-.guide-navigation--primary {
-  min-width: 200px;
-  float: left;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  overflow-x: hidden;
-
-}
-
-.guide-navigation--primary > ul {
-  padding-bottom: 180px;
-}
-
-
-/* --- nib-pattern-library: menu item */
-
-.npl-menu-item__anchors {
-  display: none;
-}
-
-.npm-menu-item--active .npl-menu-item__anchors {
-  display: block;
-}
-
-.guide-content {
-  padding-left: 440px;
-  padding-right:40px;
 }
 
 /* === list === */
