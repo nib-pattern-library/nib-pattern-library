@@ -3,6 +3,14 @@
   background-color: #fff;
 }
 
+@include breakpoint('xl') {
+
+  .offcanvas__canvas {
+    padding-left:  280px;
+  }
+
+}
+
 @include breakpoint-lt('xl') {
 
   html, body {
@@ -39,14 +47,6 @@
 
   .offcanvas--visible .offcanvas__canvas {
     transform: translate(280px);
-  }
-
-}
-
-@include breakpoint('xl') {
-
-  .offcanvas__canvas {
-    padding-left:  280px;
   }
 
 }
