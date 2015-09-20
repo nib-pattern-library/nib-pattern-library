@@ -1,6 +1,6 @@
 
 var offCanvas = require('@nib-components/off-canvas')
-offCanvas({openClass: 'offcanvas--visible'})
+offCanvas({el: document.querySelector('.js-offcanvas'), visibleClass: 'offcanvas--visible'})
 
 var backToTop = require('@nib/back-to-top')
 backToTop({
