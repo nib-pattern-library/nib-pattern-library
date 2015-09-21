@@ -18,20 +18,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: open sans;
-  font-size: 16px;
-  line-height:24px;
   color:rgb(52, 73, 94);
 }
 
 .npl-container {
   max-width: 60em;
-  margin: auto;
+  padding: 3rem;
   overflow: hidden;
 }
 
 .guide-component {
-  margin-top:60px;
-  padding-bottom:60px;
+  margin-top:4rem;
+  padding-bottom:3rem;
 }
 
 /* === list === */
