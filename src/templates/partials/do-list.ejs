@@ -1,4 +1,13 @@
 <div class="guide-list guide-list--do">
-    <i class="v2-icon v2-icon--small v2-icon--tick"></i>
-    <%- partial('list', {items: items}) %>
+    <ul class="icon-list icon-list--tick icon-list--green icon-list--aligned">
+    <% items.forEach(function(item) { %>
+    <li class="icon-list__item">
+        <% if (item instanceof Array) { %>
+            <%- partial('list', {items: item}) %>
+        <% } else { %>
+            <%- item %>
+        <% } %>
+    </li>
+    <% }) %>
+    </ul>
 </div>

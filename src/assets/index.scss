@@ -71,6 +71,9 @@ body {
   color:#e66565;
 }
 
+.icon-list--red > .icon-list__item:before {
+  color: #e66565;
+}
 
 @media screen and (max-width:800px){
       .guide-list .list {
