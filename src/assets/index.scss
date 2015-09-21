@@ -41,11 +41,12 @@ body {
   padding-left:15px;
   margin-left:40px;
   min-height:32px;
+  font-size:1rem;
 }
 
 .guide-list .list__item {
-  margin-bottom:14px;
-  line-height:22px;
+  margin-bottom:1em;
+  line-height:1.5em;
 }
 
 .guide-list i.v2-icon{
@@ -68,6 +69,25 @@ body {
 
 .guide-list--dont .v2-icon--close {
   color:#e66565;
+}
+
+
+@media screen and (max-width:800px){
+      .guide-list .list {
+        font-size: 1.125rem;
+      }
+      .guide-list{
+        font-size: 1.125rem;
+      }
+}
+
+@media screen and (max-width:480px){
+      .guide-list .list {
+        font-size: 1.25rem;
+      }
+      .icon-list{
+        font-size: 1.25rem;
+      }
 }
 
 /* === Guide Example === */
@@ -348,3 +368,6 @@ button:active, a:active{
 .u-clickable {
   cursor: pointer;
 }
+
+
+
