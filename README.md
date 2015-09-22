@@ -2,9 +2,9 @@
 
 The `nib-pattern-library` can be viewed online here:
 
-- [production](http://production.nib-pattern-library.divshot.io)
-- [staging](http://staging.nib-pattern-library.divshot.io)
-- [development](http://development.nib-pattern-library.divshot.io)
+- [production](http://production.nib-pattern-library.divshot.io) Should be the only environment that is used as a pattern library. Is the only reliable source of styles and patterns.
+- [staging](http://staging.nib-pattern-library.divshot.io) Is the environment we use for checking before we promote a development version to production. As such it will either be being QA'd or will mirror production.
+- [development](http://development.nib-pattern-library.divshot.io) Most recent, most broken. This is our environment for testing and collaborating.
 
 ## Authoring
 
