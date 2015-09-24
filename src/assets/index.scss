@@ -166,6 +166,33 @@ body {
   color: #fff;
 }
 
+.guide-component__dopey {
+  background-color: #eee;
+}
+
+.guide-component__sneezy {
+  background-color: #ddd;
+}
+
+.guide-component__bashful {
+  background-color: #ccc;
+}
+
+.guide-component__sleepy {
+  background-color: #888;
+  color: #fff;
+}
+
+.guide-component__happy {
+  background-color: #666;
+  color: #fff;
+}
+
+.guide-component__grumpy {
+  background-color: #444;
+  color: #fff;
+}
+
 .guide-input__example {
   max-width: 400px;
 }
@@ -320,6 +347,20 @@ button:active, a:active{
 .v2-link--icon:active{
   color: hsl(210, 29%, 19%);
 }
+
+table{
+  margin-top:1.5rem;
+}   
+@media screen and (max-width:800px){
+      table{
+        font-size: 1.125rem;
+      }
+    }
+    @media screen and (max-width:480px){
+      table{
+        font-size: 1.25rem;
+      }
+    }
 
 /*===== end style for states page =====*/
 
