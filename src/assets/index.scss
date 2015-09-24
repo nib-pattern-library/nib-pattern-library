@@ -27,6 +27,10 @@ body {
   overflow: hidden;
 }
 
+.npl-container > h1:first-child, .npl-container > h2:first-child, .npl-container > h3:first-child, .npl-container > h4:first-child, .npl-container > h5:first-child, .npl-container > p:first-child{
+  margin-top:0;
+}
+
 .guide-component {
   margin-top:4rem;
   padding-bottom:3rem;
@@ -101,6 +105,10 @@ body {
   background: #eee;
 }
 
+.guide-component > h1:first-child, .guide-component > h2:first-child, .guide-component > h3:first-child, .guide-component > h4:first-child, .guide-component > h5:first-child, .guide-component > p:first-child{
+  margin-top:0;
+}
+
 .guide-example__preview {
   margin: 0 0 10px;
   padding: 10px;
@@ -170,8 +178,8 @@ body {
 .guide-icon {
   display: inline-block;
   text-align: center;
-  margin-right:20px;
-  margin-bottom: 40px;
+  margin-right:1.25em;
+  margin-top: 1.5em;
   width:115px;
   height: 120px;
   vertical-align: top;
