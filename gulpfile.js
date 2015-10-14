@@ -20,7 +20,7 @@ gulp.task('default', function(done) {
 });
 
 gulp.task('all', function(done) {
-  sequence("clean", "install", "build", "test", "optimise", done);
+  sequence("clean", "install", "build", ["test","optimise"], done);
 });
 
 gulp.task('install', function(done) {
@@ -28,7 +28,7 @@ gulp.task('install', function(done) {
 });
 
 gulp.task('build', function(done) {
-  sequence(["scripts.bundle","styles.bundle","content.build"], done);
+  sequence("scripts.lint", ["scripts.bundle","styles.bundle","content.build"], done);
 });
 
 gulp.task('test', function(done) {
@@ -40,7 +40,7 @@ gulp.task('optimise', function(done) {
 });
 
 gulp.task('watch', function(done) {
-  sequence(["scripts.watch","styles.watch","packages.watch","content.watch"], done);
+  sequence(["packages.watch","scripts.watch","styles.watch","content.watch"], done);
 });
 
 gulp.task('debug', function(done) {

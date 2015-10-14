@@ -60,7 +60,32 @@ module.exports = function(cfg) {
       .destination(dest)
       .use(rename([[/\.ejs$/, '.html']]))
       .use(versionify)
-      .use(collections({pages: {pattern: 'pages/*.html', sortBy: 'title'}}))
+      .use(collections({
+        atoms: {
+          pattern: 'atoms/*.html',
+          sortBy: 'title'
+        },
+        molecules: {
+          pattern: 'molecules/*.html',
+          sortBy: 'title'
+        },
+        organisms: {
+          pattern: 'organisms/*.html',
+          sortBy: 'title'
+        },
+        templates: {
+          pattern: 'templates/*.html',
+          sortBy: 'title'
+        },
+        pages: {
+          pattern: 'pages/*.html',
+          sortBy: 'title'
+        },
+        processes: {
+          pattern: 'processes/*.html',
+          sortBy: 'title'
+        },
+      }))
       .use(rootPath())
       .use(filePath({absolute: false}))
       .use(templates({engine: 'ejs', partials: './templates', pattern: '**/*.html', partial: partial}))

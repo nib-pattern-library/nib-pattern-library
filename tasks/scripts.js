@@ -1,10 +1,11 @@
 var path        = require('path');
 var gulp        = require('gulp');
 var del         = require('del');
+var mkdirp      = require('mkdirp');
 var sequence    = require('run-sequence');
 var source      = require('vinyl-source-stream');
 
-var standard    = require('gulp-standard');
+var eslint      = require('gulp-eslint');
 var browserify  = require('browserify');
 var uglify      = require('gulp-uglify');
 var KarmaServer = require('karma').Server;
@@ -33,6 +34,13 @@ module.exports = function(cfg) {
     entries:  SCRIPT_SRC_FILE
   };
 
+  var SCRIPT_LINT_OPTIONS = null;
+  if (process.argv.indexOf('--debug') !== -1) {
+    SCRIPT_LINT_OPTIONS = {
+      configFile: "jameslnewell/debug"
+    };
+  }
+
   /*==================================
    * Clean scripts
    *==================================*/
@@ -47,8 +55,9 @@ module.exports = function(cfg) {
 
   gulp.task('scripts.lint', function() {
     return gulp.src(SCRIPT_SRC_GLOB)
-      .pipe(standard())
-      .pipe(standard.reporter('default', {breakOnError: true}))
+      .pipe(eslint(SCRIPT_LINT_OPTIONS))
+      .pipe(eslint.format('stylish'))
+      .pipe(eslint.failOnError())
     ;
   });
 
@@ -76,39 +85,43 @@ module.exports = function(cfg) {
    *==================================*/
 
   gulp.task('scripts.test', function(done) {
-    var server = new KarmaServer({
-      configFile: __dirname+'/../karma.conf.js',
-      singleRun:  true,
+    var reportsDirectory = path.resolve(cfg.distdir)+'/__reports__';
+    mkdirp(reportsDirectory, function(err) {
+      if (err) return done(err);
+      var server = new KarmaServer({
+        configFile: __dirname+'/../karma.conf.js',
+        singleRun:  true,
 
-      reporters:  ['dots', 'bamboo', 'coverage'/*, 'threshold'*/],
-      browsers:   ['PhantomJS'],
+        reporters:  ['dots', 'bamboo', 'coverage'/*, 'threshold'*/],
+        browsers:   ['PhantomJS'],
 
-      browserify: {
-        debug:      true,
-        transform:  ['browserify-istanbul']
-      },
+        browserify: {
+          debug:      true,
+          transform:  ['browserify-istanbul']
+        },
 
-      coverageReporter: {
-        dir: path.resolve(cfg.distdir)+'/coverage',
-        reporters: [
-          {type: 'html'},
-          {type: 'text-summary'}
-        ]
-      },
+        coverageReporter: {
+          dir: reportsDirectory+'/coverage',
+          reporters: [
+            {type: 'html'},
+            {type: 'text-summary'}
+          ]
+        },
 
-      thresholdReporter: {
-        statements: 90,
-        branches:   90,
-        functions:  90,
-        lines:      90
-      },
+        thresholdReporter: {
+          statements: 90,
+          branches:   90,
+          functions:  90,
+          lines:      90
+        },
 
-      bambooReporter:{
-        filename: './dist/mocha.json'
-      }
+        bambooReporter:{
+          filename: reportsDirectory+'/mocha.json'
+        }
 
-    }, done);
-    server.start();
+      }, done);
+      server.start();
+    });
   });
 
   gulp.task('scripts.debug', function(done) {

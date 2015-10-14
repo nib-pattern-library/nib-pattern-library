@@ -1,9 +1,7 @@
-/* global describe, it */
+var assert = require('assert');
 
-var assert = require('assert')
-
-describe('frontend', function () {
-  it('should pass', function () {
-    assert(true)
-  })
-})
+describe('frontend', function() {
+  it('should pass', function() {
+    assert(true);
+  });
+});
