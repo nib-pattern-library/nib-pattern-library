@@ -57,6 +57,6 @@
     "build": "gulp all",
     "watch": "gulp watch",
     "serve": "firebase serve",
-    "deploy": "npm version && git push && firebase deploy"
+    "deploy": "npm version minor && git push && firebase deploy"
   }
 }
