@@ -56,7 +56,7 @@ Run the following command to deploy the `nib-pattern-library` into production:
 
     `npm run deploy`
 
-**Note:* You must have already installed and authenticated the firebase app `npm i -g firebase && firebase login`
+**Note:* You must have already installed and authenticated the firebase app `npm i -g firebase-tools && firebase login`
 
 
 ## Directory structure
@@ -71,7 +71,7 @@ Run the following command to deploy the `nib-pattern-library` into production:
           index.scss      #the style entry file where you should write/require your code
           package.json    #the dependency information for your styles, scripts and tests
         test/
-         index.js  
+         index.js
 
       content/          #the site content
         index.ejs         #the home page
