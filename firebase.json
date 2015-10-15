@@ -1,0 +1,5 @@
+{
+  "firebase": "nib-pattern-library",
+  "public": "./dist",
+  "ignore": []
+}
