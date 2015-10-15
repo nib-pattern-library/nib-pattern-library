@@ -1,5 +1,6 @@
 {
   "name": "nib-pattern-library",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "autoprefixer": "^6.0.2",
@@ -56,6 +57,6 @@
     "build": "gulp all",
     "watch": "gulp watch",
     "serve": "firebase serve",
-    "deploy": "firebase deploy"
+    "deploy": "npm version && git push && firebase deploy"
   }
 }
