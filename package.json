@@ -49,13 +49,13 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
+  "devDependencies": {
+    "firebase-tools": "^2.0.0"
+  },
   "scripts": {
     "build": "gulp all",
     "watch": "gulp watch",
     "serve": "firebase serve",
     "deploy": "firebase deploy"
-  },
-  "devDependencies": {
-    "firebase": "^2.3.1"
   }
 }
