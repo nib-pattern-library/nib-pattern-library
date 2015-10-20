@@ -21,6 +21,11 @@ body {
   color:rgb(52, 73, 94);
 }
 
+.npl-header {
+  padding: 1em;
+  background-color: hsl(134, 100%, 29%);
+}
+
 .npl-container {
   max-width: 60em;
   padding: 3rem;
@@ -350,7 +355,7 @@ button:active, a:active{
 
 table{
   margin-top:1.5rem;
-}   
+}
 @media screen and (max-width:800px){
       table{
         font-size: 1.125rem;
