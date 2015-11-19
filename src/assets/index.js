@@ -9,3 +9,5 @@ backToTop({
   hideClass: 'u-hidden',
   hideDistance: 0.25
 });
+
+<div>Hello!</div>
