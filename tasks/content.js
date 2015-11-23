@@ -93,7 +93,6 @@ module.exports = function(cfg) {
       .use(layouts({engine: 'ejs', directory: './layouts', default: 'index.ejs', pattern: '**/*.html'}))
       .build(done)
     ;
-
   });
 
   /*==================================

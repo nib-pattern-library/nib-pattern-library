@@ -28,7 +28,8 @@ gulp.task('install', function(done) {
 });
 
 gulp.task('build', function(done) {
-  sequence("scripts.lint", ["scripts.bundle","styles.bundle","content.build"], done);
+  sequence(["scripts.bundle","styles.bundle","content.build"], done);
+  //sequence("scripts.lint", ["scripts.bundle","styles.bundle","content.build"], done);
 });
 
 gulp.task('test', function(done) {
