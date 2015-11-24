@@ -2,14 +2,13 @@
   "name": "nib-pattern-library-component",
   "private": true,
   "dependencies": {
-    "@nib-styles/responsive-grid": "^0.4.2",
     "@nib-styles/sass-breakpoints": "^1.0.0",
-    "@nib-styles/sass-grid": "^0.2.2",
+    "@nib-styles/sass-grid": "^0.3.0",
     "@nib-styles/sass-spacing": "^1.0.0",
     "@nib-styles/v2-buttons": "^2.0.2",
     "@nib-styles/v2-icons": "^2.1.0",
     "@nib-styles/v2-typography": "nib-styles/v2-typography#Relative",
-    "@nib/back-to-top": "^0.1.6",
+    "@nib/back-to-top": "nib-health-funds/back-to-top",
     "@nib-components/off-canvas": "^1.0.0"
   },
   "devDependencies": {
