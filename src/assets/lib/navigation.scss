@@ -12,6 +12,7 @@
   flex: 1;
   padding: 1.5rem;
   background-color: rgb(10,109,18);
+  overflow-x: auto;
 }
 
 @include breakpoint('xl') {

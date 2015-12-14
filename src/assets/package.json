@@ -2,6 +2,7 @@
   "name": "nib-pattern-library-component",
   "private": true,
   "dependencies": {
+    "@nib-styles/colors": "^1.1.1",
     "@nib-styles/sass-breakpoints": "^1.0.0",
     "@nib-styles/sass-grid": "^0.3.0",
     "@nib-styles/sass-spacing": "^1.0.0",

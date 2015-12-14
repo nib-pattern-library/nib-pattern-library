@@ -2,6 +2,7 @@
 @import "@nib-styles/v2-icons";
 @import "@nib-styles/v2-buttons";
 @import "@nib-styles/v2-typography";
+@import "@nib-styles/colors";
 
 @import "@nib-styles/react-form";
 
@@ -123,66 +124,63 @@ body {
 }
 
 .guide-component__colours {
-  padding:20px 20px 20px 40px;
-  border-left:5px solid rgba(0,0,0,.2);
-  margin:0 0 5px 0;
+  padding:20px;
+  //border-left:5px solid rgba(0,0,0,.2);
+  margin:0 5px 10px 0;
+  width: 250px;
+  display: inline-block;
 }
 
 .guide-component__elizabeth {
-  background-color: #009623;
+  background-color: $color-queen-elizabeth;
   color: #fff;
 }
 
 .guide-component__charles {
-  background-color: #0a6d12;
-  color: #fff;
-}
-
-.guide-component__william {
-  background-color: #00a826;
+  background-color: $color-prince-charles;
   color: #fff;
 }
 
 .guide-component__harry {
-  background-color: #26b11b;
+  background-color: $color-prince-harry;
   color: #fff;
 }
 
 .guide-component__kate {
-  background-color: #ffb400;
+  background-color: $color-princess-kate;
   color: #fff;
 }
 
 .guide-component__bashful {
-  background-color: #000;
+  background-color: $color-bashful;
   color: #fff;
 }
 
 .guide-component__doc {
-  background-color: #444;
+  background-color: $color-doc;
   color: #fff;
 }
 
 .guide-component__dopey {
-  background-color: #666;
+  background-color: $color-dopey;
   color: #fff;
 }
 
 .guide-component__grumpy {
-  background-color: #888;
+  background-color: $color-grumpy;
   color: #fff;
 }
 
 .guide-component__happy {
-  background-color: #ccc;
+  background-color: $color-happy;
 }
 
 .guide-component__sleepy {
-  background-color: #ddd;
+  background-color: $color-sleepy;
 }
 
 .guide-component__sneezy {
-  background-color: #eee;
+  background-color: $color-sneezy;
 }
 
 .guide-input__example {
