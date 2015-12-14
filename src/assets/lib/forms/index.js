@@ -46,8 +46,9 @@ export default class ExampleForm extends React.Component {
   }
 
 }
-
-render(
-  <ExampleForm />,
-  document.querySelector('#form-example')
-);
+if (document.querySelector('#form-example')) {
+  render(
+    <ExampleForm />,
+    document.querySelector('#form-example')
+  );
+}

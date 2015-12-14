@@ -3,8 +3,8 @@
   "version": "1.1.0",
   "private": true,
   "dependencies": {
-    "@nib-components/react-form": "^0.1.5",
-    "@nib-styles/react-form": "0.0.7",
+    "@nib-components/react-form": "^0.4.1",
+    "@nib-styles/react-form": "0.0.9",
     "@nib-styles/v2-typography": "^2.2.0",
     "autoprefixer": "^6.0.2",
     "babel-plugin-transform-object-rest-spread": "^6.0.14",
