@@ -84,24 +84,6 @@ body {
   color: #e66565;
 }
 
-@media screen and (max-width:800px){
-      .guide-list .list {
-        font-size: 1.125rem;
-      }
-      .guide-list{
-        font-size: 1.125rem;
-      }
-}
-
-@media screen and (max-width:480px){
-      .guide-list .list {
-        font-size: 1.25rem;
-      }
-      .icon-list{
-        font-size: 1.25rem;
-      }
-}
-
 /* === Guide Example === */
 
 .guide-example {
@@ -171,31 +153,36 @@ body {
   color: #fff;
 }
 
-.guide-component__dopey {
-  background-color: #eee;
-}
-
-.guide-component__sneezy {
-  background-color: #ddd;
-}
-
 .guide-component__bashful {
-  background-color: #ccc;
-}
-
-.guide-component__sleepy {
-  background-color: #888;
+  background-color: #000;
   color: #fff;
 }
 
-.guide-component__happy {
+.guide-component__doc {
+  background-color: #444;
+  color: #fff;
+}
+
+.guide-component__dopey {
   background-color: #666;
   color: #fff;
 }
 
 .guide-component__grumpy {
-  background-color: #444;
+  background-color: #888;
   color: #fff;
+}
+
+.guide-component__happy {
+  background-color: #ccc;
+}
+
+.guide-component__sleepy {
+  background-color: #ddd;
+}
+
+.guide-component__sneezy {
+  background-color: #eee;
 }
 
 .guide-input__example {
@@ -427,4 +414,7 @@ table{
 }
 
 
-
+.v2-article .icon-list {
+  padding: 0;
+  margin: 0;
+}
