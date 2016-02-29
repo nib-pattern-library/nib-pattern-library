@@ -1,6 +1,6 @@
 # nib-pattern-library
 
-The `nib-pattern-library` can be viewed online [here](https://nib-pattern-library.firebaseapp.com/).
+The `nib-pattern-library` can be viewed online [here](https://nib-pattern-library.herokuapp.com/).
 
 ## Authoring
 
