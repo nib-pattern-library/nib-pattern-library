@@ -27,7 +27,7 @@ Open `./dist/index.html` to view the `nib-pattern-library`.
 
 > **Note**: You only ever need to perform this step once.
 
-> **Note**: If you're using the `corp` wifi you'll need the `buildproxy` setup on your machine
+> **Note**: If you're using the `corp` wifi you'll need the `buildproxy` setup on your machine.
 
 > **Note**: You'll need to have an account on [npmjs.com](http://www.npmjs.com) and be authorised to access nib's packages.
 
@@ -39,7 +39,7 @@ When you make a change to the `nib-pattern-library` you'll need to build it in o
 
 > **Pro tip:** use `npm run watch` to automatically run the build step whenever you change a file.
 
-> **Pro tip:** use `npm run start` and navigate to `http://localhost:5000` to view the site locally
+> **Pro tip:** use `npm run start` and navigate to `http://localhost:5000` to view the site locally.
 
 ### Publishing
 
