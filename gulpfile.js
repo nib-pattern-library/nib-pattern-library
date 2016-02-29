@@ -20,7 +20,7 @@ gulp.task('default', function(done) {
 });
 
 gulp.task('all', function(done) {
-  sequence("clean", "install", "build", ["test","optimise"], done);
+  sequence("clean", "install", "build", ["optimise"], done);
 });
 
 gulp.task('install', function(done) {
@@ -30,10 +30,6 @@ gulp.task('install', function(done) {
 gulp.task('build', function(done) {
   sequence(["scripts.bundle","styles.bundle","content.build"], done);
   //sequence("scripts.lint", ["scripts.bundle","styles.bundle","content.build"], done);
-});
-
-gulp.task('test', function(done) {
-  sequence("scripts.test", done);
 });
 
 gulp.task('optimise', function(done) {

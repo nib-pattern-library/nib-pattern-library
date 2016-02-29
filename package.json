@@ -17,6 +17,7 @@
     "del": "^2.0.1",
     "ejs": "^2.3.4",
     "eslint-config-jameslnewell": "^0.2.1",
+    "express": "^4.13.4",
     "finder-on-steroids": "^0.3.2",
     "git-rev": "^0.2.1",
     "gulp": "^3.9.0",
@@ -30,14 +31,6 @@
     "gulp-uglify": "^1.2.0",
     "imagemin-pngquant": "^4.1.0",
     "invariant": "^2.2.0",
-    "karma": "^0.13.9",
-    "karma-bamboo-reporter": "^0.1.0",
-    "karma-browserify": "^4.3.0",
-    "karma-coverage": "^0.5.2",
-    "karma-mocha": "^0.2.0",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "karma-source-map-support": "^1.1.0",
-    "karma-threshold-reporter": "^0.1.15",
     "linklocal": "^2.5.2",
     "metalsmith": "^1.7.0",
     "metalsmith-collections": "^0.7.0",
@@ -50,7 +43,6 @@
     "mkdirp": "^0.5.1",
     "mocha": "^2.2.5",
     "npm-cmd": "^0.2.0",
-    "phantomjs": "^1.9.18",
     "queue": "^3.1.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
@@ -83,7 +75,6 @@
   "scripts": {
     "build": "gulp all",
     "watch": "gulp watch",
-    "serve": "firebase serve",
-    "deploy": "npm version minor && git push && firebase deploy"
+    "start": "node ./server.js"
   }
 }
