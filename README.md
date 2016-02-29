@@ -29,6 +29,8 @@ Open `./dist/index.html` to view the `nib-pattern-library`.
 
 > **Note**: If you're using the `corp` wifi you'll need the `buildproxy` setup on your machine
 
+> **Note**: You'll need to have an account on [npmjs.com](http://www.npmjs.com) and be authorised to access nib's packages.
+
 ### Building
 
 When you make a change to the `nib-pattern-library` you'll need to build it in order to view it:
