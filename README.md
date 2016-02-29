@@ -1,10 +1,6 @@
 # nib-pattern-library
 
-The `nib-pattern-library` can be viewed online here:
-
-- [production](http://production.nib-pattern-library.divshot.io) Should be the only environment that is used as a pattern library. Is the only reliable source of styles and patterns.
-- [staging](http://staging.nib-pattern-library.divshot.io) Is the environment we use for checking before we promote a development version to production. As such it will either be being QA'd or will mirror production.
-- [development](http://development.nib-pattern-library.divshot.io) Most recent, most broken. This is our environment for testing and collaborating.
+The `nib-pattern-library` can be viewed online [here](https://nib-pattern-library.firebaseapp.com/).
 
 ## Authoring
 
@@ -43,6 +39,7 @@ When you make a change to the `nib-pattern-library` you'll need to build it in o
 1. `npm run build`
 
 **Pro tip:** use `npm run watch` to automatically run the build step whenever you change a file.
+**Pro tip:** use `npm run serve` and navigate to `http://localhost:5000` to view the site locally
 
 ### Publishing
 
@@ -55,7 +52,12 @@ When you're finished making changes to the `nib-pattern-library` and want to pub
 
 ### Deploying
 
-Comming soon...
+Run the following command to deploy the `nib-pattern-library` into production:
+
+    `npm run deploy`
+
+**Note:* You must have already installed and authenticated the firebase app `npm i -g firebase-tools && firebase login`
+
 
 ## Directory structure
 
@@ -69,7 +71,7 @@ Comming soon...
           index.scss      #the style entry file where you should write/require your code
           package.json    #the dependency information for your styles, scripts and tests
         test/
-         index.js  
+         index.js
 
       content/          #the site content
         index.ejs         #the home page

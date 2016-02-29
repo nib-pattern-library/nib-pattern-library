@@ -16,8 +16,11 @@ module.exports = function(cfg) {
   var STYLE_BUILD_FILE = STYLE_BUILD_DIR+'/bundled.css';
 
   var STYLE_OPTIONS = {
-    entry:    STYLE_SRC_FILE,
-    plugins:  [composer.plugins.url({dir: STYLE_BUILD_DIR, copy: true})]
+    entry: STYLE_SRC_FILE,
+    plugins: [composer.plugins.url({transforms: [composer.plugins.url.transforms.hashed({
+      dir: STYLE_BUILD_DIR,
+      copy: true
+    })]})]
   };
 
   var STYLE_SRC_GLOB = [

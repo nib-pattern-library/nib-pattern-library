@@ -1,9 +1,10 @@
 
-@import "@nib-styles/responsive-grid";
 @import "@nib-styles/v2-icons";
 @import "@nib-styles/v2-buttons";
 @import "@nib-styles/v2-typography";
+@import "@nib-styles/colors";
 
+@import "@nib-styles/react-form";
 
 @import "@nib-styles/sass-breakpoints";
 @import "@nib-styles/sass-grid/compiled";
@@ -19,6 +20,11 @@ body {
   padding: 0;
   font-family: open sans;
   color:rgb(52, 73, 94);
+}
+
+.npl-header {
+  padding: 1em;
+  background-color: hsl(134, 100%, 29%);
 }
 
 .npl-container {
@@ -79,24 +85,6 @@ body {
   color: #e66565;
 }
 
-@media screen and (max-width:800px){
-      .guide-list .list {
-        font-size: 1.125rem;
-      }
-      .guide-list{
-        font-size: 1.125rem;
-      }
-}
-
-@media screen and (max-width:480px){
-      .guide-list .list {
-        font-size: 1.25rem;
-      }
-      .icon-list{
-        font-size: 1.25rem;
-      }
-}
-
 /* === Guide Example === */
 
 .guide-example {
@@ -136,61 +124,63 @@ body {
 }
 
 .guide-component__colours {
-  padding:20px 20px 20px 40px;
-  border-left:5px solid rgba(0,0,0,.2);
-  margin:0 0 5px 0;
+  padding:20px;
+  //border-left:5px solid rgba(0,0,0,.2);
+  margin:0 5px 10px 0;
+  width: 250px;
+  display: inline-block;
 }
 
 .guide-component__elizabeth {
-  background-color: #009623;
+  background-color: $color-queen-elizabeth;
   color: #fff;
 }
 
 .guide-component__charles {
-  background-color: #0a6d12;
-  color: #fff;
-}
-
-.guide-component__william {
-  background-color: #00a826;
+  background-color: $color-prince-charles;
   color: #fff;
 }
 
 .guide-component__harry {
-  background-color: #26b11b;
+  background-color: $color-prince-harry;
   color: #fff;
 }
 
 .guide-component__kate {
-  background-color: #ffb400;
+  background-color: $color-princess-kate;
+  color: #fff;
+}
+
+.guide-component__bashful {
+  background-color: $color-bashful;
+  color: #fff;
+}
+
+.guide-component__doc {
+  background-color: $color-doc;
   color: #fff;
 }
 
 .guide-component__dopey {
-  background-color: #eee;
-}
-
-.guide-component__sneezy {
-  background-color: #ddd;
-}
-
-.guide-component__bashful {
-  background-color: #ccc;
-}
-
-.guide-component__sleepy {
-  background-color: #888;
-  color: #fff;
-}
-
-.guide-component__happy {
-  background-color: #666;
+  background-color: $color-dopey;
   color: #fff;
 }
 
 .guide-component__grumpy {
-  background-color: #444;
+  background-color: $color-grumpy;
   color: #fff;
+}
+
+.guide-component__happy {
+  background-color: $color-happy;
+}
+
+.guide-component__sleepy {
+  background-color: $color-sleepy;
+}
+
+.guide-component__sneezy {
+  background-color: $color-sneezy;
 }
 
 .guide-input__example {
@@ -350,7 +340,7 @@ button:active, a:active{
 
 table{
   margin-top:1.5rem;
-}   
+}
 @media screen and (max-width:800px){
       table{
         font-size: 1.125rem;
@@ -422,4 +412,7 @@ table{
 }
 
 
-
+.v2-article .icon-list {
+  padding: 0;
+  margin: 0;
+}

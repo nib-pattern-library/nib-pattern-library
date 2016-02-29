@@ -6,27 +6,34 @@
 
     <div class="npl-sidebar__menu">
         <ul class="npl-sidebar-menu npl-sidebar-menu--primary">
-            <% collections.pages.forEach(function(page) { %>
-            <li class="npl-sidebar-menu__item npl-sidebar-menu-item <%- link === page.link ? 'npl-sidebar-menu-item--active' : '' %>">
 
-                <a class="npl-sidebar-menu-item__link" href="<%= rootPath %><%= page.link %>"><%= page.title %></a>
+          <% function menu(heading, pages) { %>
+            <h3 class="npl-sidebar-menu__heading"><%= heading %></h3>
+            <% pages.forEach(function(page) { %>
+              <li class="npl-sidebar-menu__item npl-sidebar-menu-item <%- link === page.link ? 'npl-sidebar-menu-item--active' : '' %>">
+                  <a class="npl-sidebar-menu-item__link" href="<%= rootPath %><%= page.link %>"><%= page.title %></a>
+                  <div class="npl-sidebar-menu-item__anchors">
+                      <ul class="npl-sidebar-menu npl-sidebar-menu--secondary">
+                          <% page.headings.forEach(function(heading) { %>
+                            <% if (heading.id) { %>
+                            <li class="npl-sidebar-menu-item npl-sidebar-menu-item--secondary">
+                              <a class="npl-sidebar-menu-item__link" href="<%= rootPath %><%= page.link %>#<%= heading.id; %>"><%= heading.text; %></a>
+                            </li>
+                            <% } %>
+                          <% }); %>
+                      </ul>
+                  </div>
+              </li>
+            <% });
+          } %>
 
-                <div class="npl-sidebar-menu-item__anchors">
-                    <ul class="npl-sidebar-menu npl-sidebar-menu--secondary">
+          <% menu('Atoms', collections.atoms);  %>
+          <% menu('Molecules', collections.molecules); %>
+          <% menu('Organisms', collections.organisms); %>
+          <% menu('Templates', collections.templates); %>
+          <% menu('Pages', collections.pages); %>
+          <% menu('Processes', collections.processes); %>
 
-                        <% page.headings.forEach(function(heading) { %>
-                          <% if (heading.id) { %>
-                          <li class="npl-sidebar-menu-item npl-sidebar-menu-item--secondary">
-                            <a class="npl-sidebar-menu-item__link" href="<%= rootPath %><%= page.link %>#<%= heading.id; %>"><%= heading.text; %></a>
-                          </li>
-                          <% } %>
-                        <% }); %>
-
-                    </ul>
-                </div>
-
-            </li>
-            <% }) %>
         </ul>
     </div>
 

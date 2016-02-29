@@ -11,7 +11,8 @@
 .npl-sidebar__menu {
   flex: 1;
   padding: 1.5rem;
-  background-color: rgb(88,57,101);
+  background-color: rgb(10,109,18);
+  overflow-x: auto;
 }
 
 @include breakpoint('xl') {
@@ -30,7 +31,7 @@
   margin: 0;
   padding: 1.5rem;
   color: #fff;
-  background: #EA3656;
+  background: rgb(0,150,35);
   line-height: 30px;
   font-weight: 100;
   font-size: 1.25em;
@@ -92,7 +93,7 @@
   margin: 0;
   padding: 15px 40px;
   color: #fff;
-  background: #EA3656;
+  background: rgb(0,150,35);
   line-height: 30px;
   font-weight: 100;
   font-size: 1em;
