@@ -10,7 +10,6 @@ var browserify = require('browserify');
 var incremental = require('browserify-incremental');
 var watchify = require('watchify');
 var uglify = require('gulp-uglify');
-var KarmaServer = require('karma').Server;
 
 var package = require('../package.json');
 

@@ -70,7 +70,8 @@
     ]
   },
   "devDependencies": {
-    "firebase-tools": "^2.0.0"
+    "firebase-tools": "^2.0.0",
+    "watchify": "^3.7.0"
   },
   "scripts": {
     "build": "gulp all",
