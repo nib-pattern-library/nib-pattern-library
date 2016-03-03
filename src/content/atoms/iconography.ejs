@@ -1,16 +1,20 @@
 ---
 title:      Iconography
+githubLink:  https://github.com/nib-styles/v2-icons
 ---
 
 <p class="v2-copy">Icons are used across our site to help illustrate a concept, visually break up content and assist in navigation. </p>
 
-<ul class="v2-list">
-    <li>Icons can be in colour</li>
-    <li>Do not size icons less than 16px</li>
-    <li>Do not source any other icons (if new icons needed speak to <a class="v2-link v2-link--green" href="mailto:design@nib.com.au">design@nib.com.au</a>)</li>
-</ul>
+<%- partial('do-list', {items: [
+  'Icons can be in colour'
+]}) %>
 
-<p class="v2-copy">For your designs, you can find the source <code>*.svg</code> files <a href="https://github.com/nib-styles/v2-icons/tree/master/icons">here</a>.</p>
+<%- partial('dont-list', {items: [
+  'DO NOT size icons less than 16px',
+  'Do NOT source any other icons (if new icons needed speak to <a class="v2-link v2-link--green" href="mailto:design@nib.com.au">design@nib.com.au</a>)'
+]}) %>
+
+<p class="v2-copy">For your designs, you can find the source <code>*.svg</code> files <a href="https://github.com/nib-styles/v2-icons/tree/master/icons" class="v2-link v2-link--green">here</a>.</p>
 
     <h2 class="guide-component__title v2-title v2-title--2">Example</h2>
 

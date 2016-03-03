@@ -29,8 +29,33 @@ body {
 
 .npl-container {
   max-width: 60em;
-  padding: 3rem;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.page-header__title {
+  margin: 0 !important;
+}
+
+.page-header__actions {
+  padding: 5px;
+  border-top: 1px solid #ddd;
+
+  @media (min-width: 40em) {
+    & {
+      border: 0;
+    }
+  }
+}
+
+.page-header__action-link {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .npl-container > h1:first-child, .npl-container > h2:first-child, .npl-container > h3:first-child, .npl-container > h4:first-child, .npl-container > h5:first-child, .npl-container > p:first-child{

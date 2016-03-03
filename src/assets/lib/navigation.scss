@@ -10,7 +10,7 @@
 
 .npl-sidebar__menu {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: rgb(10,109,18);
   overflow-x: auto;
 }
@@ -29,14 +29,14 @@
 .npl-sidebar-header {
   font-family: roboto;
   margin: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   color: #fff;
   background: rgb(0,150,35);
-  line-height: 30px;
+  line-height: 22px;
   font-weight: 100;
-  font-size: 1.25em;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: .5em;
+  letter-spacing: 3px;
 }
 
 /* === MENU === */
@@ -48,29 +48,36 @@
 }
 
 .npl-sidebar-menu--secondary {
-  padding-left: 20px;
   font-size: .8em;
   line-height: 1em;
+  //padding-bottom: 10px;
 }
 
+
+.npl-sidebar-menu__heading {
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsla(134,100%,29%,0.5);
+  font-size: 18px;
+}
 
 /* === MENU ITEM === */
 
 .npl-sidebar-menu-item {
   list-style-type: none;
-  text-transform: uppercase;
 }
 
 .npl-sidebar-menu-item__link {
   text-decoration: none;
-  padding: 10px 15px 10px 0;
+  padding: 0 15px 10px 0;
   display: inline-block;
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.7);
   transition: all .3s ease-in-out;
 }
 
 .npl-sidebar-menu-item--secondary .npl-sidebar-menu-item__link {
   color: rgba(255,255,255,.5);
+  text-transform: none;
 }
 
 .npl-sidebar-menu-item__link:hover {
@@ -82,6 +89,29 @@
   display: none;
 }
 
+.npl-sidebar-menu-item--active > .npl-sidebar-menu-item__link {
+  color: #fff;
+  font-weight: bold;
+}
+
+.npl-sidebar-menu-item--active {
+  position: relative;
+
+  &:before {
+    content: "\E01F";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: .25em;
+    font: normal normal normal 14px/1 "nibdings";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+  }
+}
+
 .npl-sidebar-menu-item--active .npl-sidebar-menu-item__anchors {
   display: block;
 }
@@ -91,14 +121,12 @@
 .npl-sidebar-footer {
   font-family: roboto;
   margin: 0;
-  padding: 15px 40px;
-  color: #fff;
+  padding: 1rem;
   background: rgb(0,150,35);
-  line-height: 30px;
   font-weight: 100;
-  font-size: 1em;
-  letter-spacing: .23em;
+  font-size: 13px;
+  letter-spacing: 2px;
   bottom: 0;
-  color: rgba(255,255,255, 0.5);
+  color: rgba(255,255,255, 0.75);
   text-transform: uppercase;
 }

@@ -10,13 +10,26 @@
 
     <div class="npl-header" g-xl="display:none">
       <a class="u-clickable js-offcanvas-trigger-open" g-xl="display:none">
-        <i class="v2-icon v2-icon--menu"></i>
+        <i class="v2-icon v2-icon--menu v2-icon--white"></i>
       </a>
     </div>
 
-    <div class="npl-container v2-article">
+    <div class="npl-container v2-article" g-xs="p3" g-sm="p5">
 
-      <h1 class="v2-title v2-title--1"><%= title %></h1>
+      <div class="page-header grid" g-xs="mb3" g-md="valign:middle pb3 mb4">
+
+        <div class="grid__unit" g-md="cols:6">
+          <h1 class="page-header__title v2-title v2-title--1"><%= title %></h1>
+        </div>
+
+        <div class="grid__unit" g-xs="mt2" g-md="cols:6 text:right mt0">
+          <% if (typeof githubLink !== 'undefined') { %>
+            <% include partials/github-link %>
+          <% } %>
+        </div>
+
+      </div>
+
       <%- contents %>
 
     </div>
