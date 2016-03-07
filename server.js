@@ -4,5 +4,5 @@ var app = express();
 app.use(express.static(__dirname + '/dist'));
 
 app.listen(process.env.PORT || 5000, function() {
-  console.log('Node app is running');
+  console.log('The Pattern Library is viewable at http://localhost:5000');
 });

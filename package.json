@@ -3,8 +3,8 @@
   "version": "1.2.0",
   "private": true,
   "dependencies": {
-    "@nib-components/react-form": "^0.4.1",
-    "@nib-styles/react-form": "0.0.9",
+    "@nib-components/react-form": "^0.5.2",
+    "@nib-styles/react-form": "0.1.2",
     "@nib-styles/v2-typography": "^2.2.0",
     "autoprefixer": "^6.0.2",
     "babel-plugin-transform-object-rest-spread": "^6.0.14",
@@ -55,20 +55,7 @@
     "watchify": "^3.7.0"
   },
   "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015",
-            "react"
-          ],
-          "plugins": [
-            "transform-object-rest-spread"
-          ]
-        }
-      ]
-    ]
+    "transform": [["babelify"]]
   },
   "scripts": {
     "build": "gulp all",

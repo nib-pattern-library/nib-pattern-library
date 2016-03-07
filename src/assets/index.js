@@ -1,8 +1,6 @@
-
-var offCanvas = require('@nib-components/off-canvas');
-var backToTop = require('@nib/back-to-top');
-
-import Form from './lib/forms/index.js';
+import offCanvas from '@nib-components/off-canvas';
+import backToTop from '@nib/back-to-top';
+import './lib/forms';
 
 offCanvas({el: document.querySelector('.js-offcanvas'), visibleClass: 'offcanvas--visible'});
 
