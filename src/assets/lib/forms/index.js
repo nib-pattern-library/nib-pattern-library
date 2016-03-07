@@ -18,7 +18,7 @@ export default class ExampleForm extends React.Component {
     return (
       <div>
 
-        <label class="label">Color:</label>
+        <label className="label">Color:</label>
         <Form.RadioGroup
           name="color" value={this.state.color} options={{white: 'White', grey: 'Grey', green: 'Green'}}
           onChange={this.handleColorChange}
