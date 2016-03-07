@@ -10,6 +10,10 @@
 @import "@nib-styles/sass-grid/compiled";
 @import "@nib-styles/sass-spacing/compiled";
 
+//this one looks pretty good but contrasts with content?
+//@import "highlight.js/styles/gruvbox-dark";
+@import "highlight.js/styles/github-gist";
+
 @import "./lib/offcanvas";
 @import "./lib/navigation";
 
@@ -133,7 +137,7 @@ body {
 .guide-example__source {
   margin: 0 0 10px;
   padding: 10px;
-  color: #444;
+  //color: #444;
   font-size: 13px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   line-height: 1.42857143;
@@ -141,7 +145,7 @@ body {
   word-wrap: break-word;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #f5f5f5;
+  //background-color: #f5f5f5;
 }
 
 .guide-separator {

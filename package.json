@@ -29,6 +29,7 @@
     "gulp-rev-all": "^0.8.21",
     "gulp-rev-napkin": "git+https://github.com/mbbender/gulp-rev-napkin.git",
     "gulp-uglify": "^1.2.0",
+    "highlight.js": "^9.2.0",
     "imagemin-pngquant": "^4.1.0",
     "invariant": "^2.2.0",
     "linklocal": "^2.5.2",
@@ -55,7 +56,11 @@
     "watchify": "^3.7.0"
   },
   "browserify": {
-    "transform": [["babelify"]]
+    "transform": [
+      [
+        "babelify"
+      ]
+    ]
   },
   "scripts": {
     "build": "gulp all",
